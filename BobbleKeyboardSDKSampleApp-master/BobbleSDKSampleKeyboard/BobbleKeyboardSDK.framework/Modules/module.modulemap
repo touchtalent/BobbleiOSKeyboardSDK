@@ -1,0 +1,11 @@
+framework module BobbleKeyboardSDK {
+  umbrella header "BobbleKeyboardSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module BobbleKeyboardSDK.Swift {
+    header "BobbleKeyboardSDK-Swift.h"
+    requires objc
+}
