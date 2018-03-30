@@ -20,10 +20,6 @@ BobbleKeyboardSDK exposes two place holders which can contain customized view's 
 1. Top Bar
 2. Custom View
 
-You can find the framework here : https://github.com/touchtalent/BobbleKeyboardSDKSampleApp/tree/master/BobbleSDKSampleApp/Frameworks
-
-You can refer to sample app here : https://github.com/touchtalent/BobbleKeyboardSDKSampleApp
-
 Below is the list of all UI configuration that is possible as part of customization.
 
 Configuration | Description
