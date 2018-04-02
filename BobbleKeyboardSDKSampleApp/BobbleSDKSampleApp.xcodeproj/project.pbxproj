@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3DF7E4A206E6478000F43D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E3E206E6478000F43D2 /* ViewController.swift */; };
+		D3DF7E4B206E6478000F43D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3DF7E3F206E6478000F43D2 /* Assets.xcassets */; };
+		D3DF7E4C206E6478000F43D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DF7E40206E6478000F43D2 /* LaunchScreen.storyboard */; };
+		D3DF7E4D206E6478000F43D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DF7E42206E6478000F43D2 /* Main.storyboard */; };
+		D3DF7E4E206E6478000F43D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E44206E6478000F43D2 /* AppDelegate.swift */; };
+		D3DF7E4F206E6478000F43D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3DF7E45206E6478000F43D2 /* Info.plist */; };
+		D3DF7E52206E6478000F43D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3DF7E49206E6478000F43D2 /* Info.plist */; };
+		D3DF7E5F206E67C6000F43D2 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */; };
+		D3DF7E61206E67C6000F43D2 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DF7E47206E6478000F43D2 /* BobbleKeyboardSDK.framework */; };
+		D3DF7E68206E67F1000F43D2 /* BobbleSDKSampleKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3DF7E66206E67C6000F43D2 /* BobbleSDKSampleKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3DF7E6C206E69E6000F43D2 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DF7E47206E6478000F43D2 /* BobbleKeyboardSDK.framework */; };
+		D3DF7E6D206E69E6000F43D2 /* BobbleKeyboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3DF7E47206E6478000F43D2 /* BobbleKeyboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3DF7E69206E67F1000F43D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3B4D2F3206501C000E91CFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3DF7E5D206E67C6000F43D2;
+			remoteInfo = BobbleSDKSampleKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3B4D3242065028600E91CFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D3DF7E6D206E69E6000F43D2 /* BobbleKeyboardSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DF7E6B206E67F1000F43D2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3DF7E68206E67F1000F43D2 /* BobbleSDKSampleKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D3B4D2FB206501C000E91CFF /* BobbleSDKSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BobbleSDKSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DF7E3E206E6478000F43D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3DF7E3F206E6478000F43D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3DF7E41206E6478000F43D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3DF7E43206E6478000F43D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3DF7E44206E6478000F43D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3DF7E45206E6478000F43D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3DF7E47206E6478000F43D2 /* BobbleKeyboardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BobbleKeyboardSDK.framework; sourceTree = "<group>"; };
+		D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D3DF7E49206E6478000F43D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3DF7E66206E67C6000F43D2 /* BobbleSDKSampleKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BobbleSDKSampleKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3B4D2F8206501C000E91CFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DF7E6C206E69E6000F43D2 /* BobbleKeyboardSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DF7E60206E67C6000F43D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DF7E61206E67C6000F43D2 /* BobbleKeyboardSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3B4D2F2206501C000E91CFF = {
+			isa = PBXGroup;
+			children = (
+				D3DF7E3D206E6478000F43D2 /* BobbleSDKSampleApp */,
+				D3DF7E46206E6478000F43D2 /* BobbleSDKSampleKeyboard */,
+				D3B4D2FC206501C000E91CFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3B4D2FC206501C000E91CFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3B4D2FB206501C000E91CFF /* BobbleSDKSampleApp.app */,
+				D3DF7E66206E67C6000F43D2 /* BobbleSDKSampleKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3DF7E3D206E6478000F43D2 /* BobbleSDKSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				D3DF7E3E206E6478000F43D2 /* ViewController.swift */,
+				D3DF7E3F206E6478000F43D2 /* Assets.xcassets */,
+				D3DF7E40206E6478000F43D2 /* LaunchScreen.storyboard */,
+				D3DF7E42206E6478000F43D2 /* Main.storyboard */,
+				D3DF7E44206E6478000F43D2 /* AppDelegate.swift */,
+				D3DF7E45206E6478000F43D2 /* Info.plist */,
+			);
+			path = BobbleSDKSampleApp;
+			sourceTree = "<group>";
+		};
+		D3DF7E46206E6478000F43D2 /* BobbleSDKSampleKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D3DF7E47206E6478000F43D2 /* BobbleKeyboardSDK.framework */,
+				D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */,
+				D3DF7E49206E6478000F43D2 /* Info.plist */,
+			);
+			path = BobbleSDKSampleKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3B4D2FA206501C000E91CFF /* BobbleSDKSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B4D30D206501C000E91CFF /* Build configuration list for PBXNativeTarget "BobbleSDKSampleApp" */;
+			buildPhases = (
+				D3B4D2F7206501C000E91CFF /* Sources */,
+				D3B4D2F8206501C000E91CFF /* Frameworks */,
+				D3B4D2F9206501C000E91CFF /* Resources */,
+				D3B4D3242065028600E91CFF /* Embed Frameworks */,
+				D3DF7E6B206E67F1000F43D2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3DF7E6A206E67F1000F43D2 /* PBXTargetDependency */,
+			);
+			name = BobbleSDKSampleApp;
+			productName = Zkeyboard;
+			productReference = D3B4D2FB206501C000E91CFF /* BobbleSDKSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3DF7E5D206E67C6000F43D2 /* BobbleSDKSampleKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DF7E63206E67C6000F43D2 /* Build configuration list for PBXNativeTarget "BobbleSDKSampleKeyboard" */;
+			buildPhases = (
+				D3DF7E5E206E67C6000F43D2 /* Sources */,
+				D3DF7E60206E67C6000F43D2 /* Frameworks */,
+				D3DF7E62206E67C6000F43D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BobbleSDKSampleKeyboard;
+			productName = ZKeyboardE;
+			productReference = D3DF7E66206E67C6000F43D2 /* BobbleSDKSampleKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3B4D2F3206501C000E91CFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Bobble Keyboard";
+				TargetAttributes = {
+					D3B4D2FA206501C000E91CFF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D3DF7E5D206E67C6000F43D2 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D3B4D2F6206501C000E91CFF /* Build configuration list for PBXProject "BobbleSDKSampleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3B4D2F2206501C000E91CFF;
+			productRefGroup = D3B4D2FC206501C000E91CFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3B4D2FA206501C000E91CFF /* BobbleSDKSampleApp */,
+				D3DF7E5D206E67C6000F43D2 /* BobbleSDKSampleKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3B4D2F9206501C000E91CFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DF7E52206E6478000F43D2 /* Info.plist in Resources */,
+				D3DF7E4B206E6478000F43D2 /* Assets.xcassets in Resources */,
+				D3DF7E4D206E6478000F43D2 /* Main.storyboard in Resources */,
+				D3DF7E4C206E6478000F43D2 /* LaunchScreen.storyboard in Resources */,
+				D3DF7E4F206E6478000F43D2 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DF7E62206E67C6000F43D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3B4D2F7206501C000E91CFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DF7E4A206E6478000F43D2 /* ViewController.swift in Sources */,
+				D3DF7E4E206E6478000F43D2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DF7E5E206E67C6000F43D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DF7E5F206E67C6000F43D2 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3DF7E6A206E67F1000F43D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3DF7E5D206E67C6000F43D2 /* BobbleSDKSampleKeyboard */;
+			targetProxy = D3DF7E69206E67F1000F43D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3DF7E40206E6478000F43D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DF7E41206E6478000F43D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D3DF7E42206E6478000F43D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DF7E43206E6478000F43D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3B4D30B206501C000E91CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3B4D30C206501C000E91CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3B4D30E206501C000E91CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DYRJ66PN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BobbleSDKSampleKeyboard",
+				);
+				INFOPLIST_FILE = BobbleSDKSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3B4D30F206501C000E91CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DYRJ66PN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BobbleSDKSampleKeyboard",
+				);
+				INFOPLIST_FILE = BobbleSDKSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3DF7E64206E67C6000F43D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DYRJ66PN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BobbleSDKSampleKeyboard",
+				);
+				INFOPLIST_FILE = BobbleSDKSampleKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp.BobbleSDKSampleKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3DF7E65206E67C6000F43D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DYRJ66PN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BobbleSDKSampleKeyboard",
+				);
+				INFOPLIST_FILE = BobbleSDKSampleKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp.BobbleSDKSampleKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3B4D2F6206501C000E91CFF /* Build configuration list for PBXProject "BobbleSDKSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B4D30B206501C000E91CFF /* Debug */,
+				D3B4D30C206501C000E91CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B4D30D206501C000E91CFF /* Build configuration list for PBXNativeTarget "BobbleSDKSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B4D30E206501C000E91CFF /* Debug */,
+				D3B4D30F206501C000E91CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DF7E63206E67C6000F43D2 /* Build configuration list for PBXNativeTarget "BobbleSDKSampleKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DF7E64206E67C6000F43D2 /* Debug */,
+				D3DF7E65206E67C6000F43D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3B4D2F3206501C000E91CFF /* Project object */;
+}
