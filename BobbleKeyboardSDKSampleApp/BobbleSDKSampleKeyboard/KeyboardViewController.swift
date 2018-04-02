@@ -77,7 +77,7 @@ class KeyboardViewController: BobbleKeyboardViewController {
 //
         showCustomView(view: customView )
 //
-       //setInputTarget(textView: feedbackInputView)
+       setInputTarget(textView: feedbackInputView)
         
 //       showKeyboardView()
     
