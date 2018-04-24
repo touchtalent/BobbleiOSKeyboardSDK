@@ -340,9 +340,9 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
 }
 ```
 
-#### 9. API changeUserKeyboardSetting(key:NSInteger , value:Bool)
+#### 9. API setIMESettings(key:NSInteger , value:Bool)
 
-The custom class that extends BobbleKeyboardViewController can call changeUserKeyboardSetting() API to change keyboard's settings programmatically.
+The custom class that extends BobbleKeyboardViewController can call setIMESettings() API to change keyboard's settings programmatically.
 Here are the possible values of key parameter: SETTING_AUTO_CAPITALIZATION, SETTING_SOUND, SETTING_WORD_SUGGESTION, SETTING_AUTO_CORRECTION, SETTING_LOWERCASE_KEY_CAPS.
 
 **Example :**
@@ -369,7 +369,7 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
     }
     
     func topBarButtonClicked(sender: UIButton) {
-        changeUserKeyboardSetting(SETTING_AUTO_CAPITALIZATION, false)
+        setIMESettings(SETTING_AUTO_CAPITALIZATION, false)
     }
 }
 ```
