@@ -376,12 +376,10 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
 #### 10. API showTopBar()
 
 The custom class that extends BobbleKeyboardViewController can call showTopBar() API to control the visibility of the top bar.
+
+**Example :**
      
-     - Precondition: `Top bar` should be added.
-     
-     **Example :**
-     
-     ```swift
+```swift
 import UIKit
 import BobbleKeyboardSDK
 
@@ -408,12 +406,10 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
 #### 11. API hideTopBar()
 
 The custom class that extends BobbleKeyboardViewController can call hideTopBar() API to hide the visibility of the top bar.
+
+**Example :**
      
-     - Precondition: `Top bar` should be visible.
-     
-     **Example :**
-     
-          ```swift
+```swift
 import UIKit
 import BobbleKeyboardSDK
 
@@ -434,21 +430,14 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         let topBarButton:UIButton = UIButton()
         topBarButton.addTarget(self, action: #selector(SampleKeyboardViewController.topBarButtonClicked(sender:)), for:     UIControlEvents.touchUpInside)
     }
-    
-    
-
 
 #### 12. API showOverlay(view: UIView)
 
 The custom class that extends BobbleKeyboardViewController can call showOverlay() API to render the passed along view ontop of the visible keyboard area.This view should allow for transparency so that the keyboard beneath may be visible
      
-     - Parameter view: The view that needs to be shown as a overlay.
+**Example :**
      
-     - Precondition: `keyboard area` should be visible.
-     
-     **Example :**
-     
-               ```swift
+```swift
 import UIKit
 import BobbleKeyboardSDK
 
@@ -462,19 +451,15 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         overlat.alpha = 0.5
         showOverlay(view: overlay)
     }
-    }
-   
-    
+}
 
 #### 13. API hideOverlay()
 
 The custom class that extends BobbleKeyboardViewController can call hideOverlay() API to hide the overlay view.
      
-     - Precondition: `overlay view` should be visible.
-     
-     **Example :**
+**Example :**
 
-               ```swift
+```swift
 import UIKit
 import BobbleKeyboardSDK
 
@@ -485,17 +470,15 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         // Build custom view that need to be shown in the tob bar container
         hideOverlay()
     }
-    }
+}
     
 #### 14. API loadSuggestionView()
 
 The custom class that extends BobbleKeyboardViewController can call loadSuggestionView() API to load the passed in view onto the suggestion bar.
      
-     - Parameter view: The view that needs to be add in Suggestion Bar.
-     
-     **Example :**
+**Example :**
 
-               ```swift
+```swift
 import UIKit
 import BobbleKeyboardSDK
 
@@ -509,5 +492,5 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
          let suggestionV = UIView(frame: CGRect(x: 45, y: 0, width: , height: ))
            loadSuggestionView(view: suggestionV)
     }
-    }
+}
 
