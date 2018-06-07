@@ -399,9 +399,9 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         // Example of a button in top bar that's going to show custom view on click
         let topBarButton:UIButton = UIButton()
         topBarButton.addTarget(self, action: #selector(SampleKeyboardViewController.topBarButtonClicked(sender:)), for:     UIControlEvents.touchUpInside)
-    }
-   
+    }   
 }
+```     
      
 #### 11. API hideTopBar()
 
@@ -430,6 +430,8 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         let topBarButton:UIButton = UIButton()
         topBarButton.addTarget(self, action: #selector(SampleKeyboardViewController.topBarButtonClicked(sender:)), for:     UIControlEvents.touchUpInside)
     }
+}
+```
 
 #### 12. API showOverlay(view: UIView)
 
@@ -452,6 +454,7 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         showOverlay(view: overlay)
     }
 }
+```
 
 #### 13. API hideOverlay()
 
@@ -471,7 +474,8 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         hideOverlay()
     }
 }
-    
+```
+
 #### 14. API loadSuggestionView()
 
 The custom class that extends BobbleKeyboardViewController can call loadSuggestionView() API to load the passed in view onto the suggestion bar.
@@ -493,4 +497,4 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
            loadSuggestionView(view: suggestionV)
     }
 }
-
+```
