@@ -31,35 +31,35 @@ class KeyboardViewController: BobbleKeyboardViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         
-        //I made Api and comment out ....for Testing purpose U can un-comment and Use it
-        
-     
-      
-      
-     // add Top Bar
         
 //        let viewTop:UIView = UIView()
 //        viewTop.backgroundColor = UIColor.blue
-//       setTopBar(view: viewTop)
+//        setTopBar(view: viewTop)
+//        hideTopBar()
+//        showTopBar()
         
         
         
         
         
-        // add cutomView
-        //height for custom view "ScreenWidth >= 400 ? 226  : 216" like standard keyboard
+//        let overlat = UIView()
+//        overlat.backgroundColor = UIColor.orange
+//        overlat.alpha = 0.5
+//        showOverlay(view: overlat)
+//        hideOverlay()
+        
+        
+        
+        
+        
+        
         
         
 //        let customView = UIView()
-//        customView.frame = CGRect(x: 0, y:0, width: self.view.bounds.width, height:180)
-//        customView.backgroundColor = UIColor.clear
-        
-        
-        //TextInputView is Custom text input view
-        // set "isPasswordProtacted" true for password field
-        //and for get TEXTFIELD text or password ...call api getText()
-        
-//       let feedbackInputView = TextInputView(frame: CGRect(x: 20, y: 10, width: 300, height: 40))
+//        customView.frame = CGRect(x: 0, y:0, width: self.view.bounds.width, height:100)
+//        customView.backgroundColor = UIColor.green
+//
+//        let feedbackInputView = TextInputView(frame: CGRect(x: 20, y: 10, width: 300, height: 40))
 //        feedbackInputView.backgroundColor = UIColor.white
 //        feedbackInputView.isHidden = false
 //        feedbackInputView.layer.cornerRadius = 4
@@ -67,31 +67,43 @@ class KeyboardViewController: BobbleKeyboardViewController {
 //        feedbackInputView.isPasswordProtacted = true
 //        customView.addSubview(feedbackInputView)
 //        vw = feedbackInputView
-//
-//        let feedbackInputView1 = TextInputView(frame: CGRect(x: 20, y: 70, width: 300, height: 40))
-//        feedbackInputView1.backgroundColor = UIColor.white
-//        feedbackInputView1.isHidden = false
-//        feedbackInputView1.layer.cornerRadius = 4
-//        feedbackInputView1.layer.masksToBounds = true
-//        feedbackInputView1.isPasswordProtacted = false
-//        customView.addSubview(feedbackInputView1)
-//
 //        showCustomView(view: customView )
-////
-//       setInputTarget(textView: feedbackInputView)
+//        setInputTarget(textView: feedbackInputView)
         
-//       showKeyboardView()
+        
+        
+        
+        
+        
+        
+        //        restoreInputTarget()
+        //
+        //        showKeyboardView()
+        
+       
+        
+        //        let suggestionV = UIView(frame: CGRect(x: 45, y: 0, width: <#T##CGFloat#>, height: <#T##CGFloat#>))
+        //        loadSuggestionView(view: <#T##UIView#>)
+        
+        
+   
+        
+//        setIMESettings(key: BobbleIMESettings.WORD_SUGGESTION, value: true)
+//        setIMESettings(key: BobbleIMESettings.AUTO_CORRECTION, value: true)
+//        setIMESettings(key: BobbleIMESettings.AUTO_CAPITALIZATION, value: true)
+//        setIMESettings(key: BobbleIMESettings.LOWERCASE_KEY_CAPS, value: true)
+//        setIMESettings(key: BobbleIMESettings.KEYPAD_CLICK_SOUND, value: true)
+        
+        
+        
+        
+       // setKeyboardLanguage(value: "ar")
+        
     
         
-        // chnage Settings
-        //setIMESettings(key: BobbleIMESettings.WORD_SUGGESTION, value: true)
-    
     }
     
-//    override func viewWillDisappear(_ animated: Bool) {
-//        let str:String = vw.getText()
-//        print(str)
-//    }
+
 }
 
 

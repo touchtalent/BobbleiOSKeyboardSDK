@@ -334,8 +334,12 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
 @property (nonatomic) BOOL isArabicModeOn;
 @property (nonatomic) BOOL isTopBar;
 @property (nonatomic) BOOL isCustomView;
+@property (nonatomic) BOOL isBannerView;
+@property (nonatomic) BOOL isForwordView;
+@property (nonatomic) BOOL isOverlay;
 @property (nonatomic, strong) UIView * _Nonnull topBarView;
 @property (nonatomic, strong) UIView * _Nonnull customView;
+@property (nonatomic, strong) UIView * _Nonnull overlayView;
 @property (nonatomic, strong) ExtraView * _Nullable bannerView;
 @property (nonatomic, strong) ExtraView * _Nullable bannerV;
 @property (nonatomic, strong) UIView * _Nullable customBarView;
@@ -372,18 +376,23 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
 - (void)viewDidLayoutSubviews;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)changeKeyboardLanguageWithValue:(NSString * _Nonnull)value;
+- (void)addViewOnSuggestionBarWithView:(UIView * _Nonnull)view;
 - (void)addTopBarViewWithViewForTopBar:(UIView * _Nonnull)viewForTopBar;
 - (void)openCustomWithViewForCustom:(UIView * _Nonnull)viewForCustom;
 - (void)restoreInput;
 - (void)openKeyboardWithTextView:(TextInputView * _Nonnull)textView;
 - (void)dismissCustom;
+- (void)hideTopBarView;
+- (void)showTopBarView;
+- (void)showOverlayViewWithOverlayV:(UIView * _Nonnull)overlayV;
+- (void)hideOverlayView;
 - (void)dismissOtherViewsIfOpen;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration;
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation;
 - (CGFloat)heightForOrientationWithOrientation:(UIInterfaceOrientation)orientation withTopBanner:(BOOL)withTopBanner SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)getheightForOrientationWithOrientation:(UIInterfaceOrientation)orientation withTopBanner:(BOOL)withTopBanner withTopBar:(BOOL)withTopBar withCustomView:(BOOL)withCustomView SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)getheightForOrientationWithOrientation:(UIInterfaceOrientation)orientation withTopBanner:(BOOL)withTopBanner withTopBar:(BOOL)withTopBar withCustomView:(BOOL)withCustomView withKeyboardView:(BOOL)withKeyboardView SWIFT_WARN_UNUSED_RESULT;
 - (void)setupKeys;
 - (void)spaceKeyIdentifierFunction;
 - (void)addCharacterToListWithSender:(KeyboardKey * _Nonnull)sender;
@@ -440,6 +449,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) SWIFT_METATYPE(Layou
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) SWIFT_METATYPE(GlobalColors) _Nonnull globalColors;)
 + (SWIFT_METATYPE(GlobalColors) _Nonnull)globalColors SWIFT_WARN_UNUSED_RESULT;
 - (ExtraView * _Nullable)createBanner SWIFT_WARN_UNUSED_RESULT;
+- (void)setBannerWithView:(UIView * _Nonnull)view;
 - (ExtraView * _Nullable)createSettings SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleSettingsForBack;
 @end
@@ -483,6 +493,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK24BLKeyboardViewController")
 - (void)setupKeys;
 - (void)returnClicked;
 - (ExtraView * _Nullable)createBanner SWIFT_WARN_UNUSED_RESULT;
+- (void)setBannerWithView:(UIView * _Nonnull)viewSuggestion;
 - (void)dismissOtherViewsIfOpen;
 - (void)keyFramesValuesChanged;
 - (void)setupInitialState;
@@ -544,6 +555,8 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK19BLSuggestionsBanner")
 @property (nonatomic, strong) UIButton * _Nonnull wordLabel_1;
 @property (nonatomic, strong) UIButton * _Nonnull wordLabel_2;
 @property (nonatomic, strong) UIButton * _Nonnull wordLabel_3;
+@property (nonatomic) BOOL isSuggestionView;
+@property (nonatomic, strong) UIView * _Nonnull suggestionView;
 @property (nonatomic, readonly, strong) UIView * _Nonnull border12;
 @property (nonatomic, readonly, strong) UIView * _Nonnull border23;
 @property (nonatomic, strong) UIColor * _Nonnull buttonBackgroundColor;
@@ -558,6 +571,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK19BLSuggestionsBanner")
 - (void)addCreateStickerButton;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)setNeedsLayout;
+- (void)setBannerViewWithView:(UIView * _Nonnull)view;
 - (void)layoutSubviews;
 - (void)toggleTextInputMode:(BOOL)show;
 - (void)shuffleBannerButtonsInteractionWithEnable:(BOOL)enable;
@@ -619,7 +633,34 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 /// The custom class that extends BobbleKeyboardViewController can call setKeyboardLanguage() API to set the language of the keyboard. language could take string values “ar” or “en”.
 /// precondition:
 /// <code>value</code> should not be nil.
+/// <ul>
+///   <li>
+///     Parameter: “en” for English and “ar” for Arabic.
+///   </li>
+/// </ul>
 - (void)setKeyboardLanguageWithValue:(NSString * _Nonnull)value;
+/// The custom class that extends BobbleKeyboardViewController can call showTopBar() API to control the visibility of the top bar.
+/// precondition:
+/// <code>Top bar</code> should be added.
+- (void)showTopBar;
+/// The custom class that extends BobbleKeyboardViewController can call hideTopBar() API to hide the visibility of the top bar.
+/// precondition:
+/// <code>Top bar</code> should be visible.
+- (void)hideTopBar;
+/// The custom class that extends BobbleKeyboardViewController can call showOverlay() API to render the passed along view ontop of the visible keyboard area.This view should allow for transparency so that the keyboard beneath may be visible
+/// precondition:
+/// <code>keyboard area</code> should be visible.
+/// \param view The view that needs to be shown as a overlay.
+///
+- (void)showOverlayWithView:(UIView * _Nonnull)view;
+/// The custom class that extends BobbleKeyboardViewController can call hideOverlay() API to hide the overlay view.
+/// precondition:
+/// <code>overlay view</code> should be visible.
+- (void)hideOverlay;
+/// The custom class that extends BobbleKeyboardViewController can call loadSuggestionView() API to load the passed in view onto the suggestion bar.
+/// \param view The view that needs to be add in Suggestion Bar.
+///
+- (void)loadSuggestionViewWithView:(UIView * _Nonnull)view;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
