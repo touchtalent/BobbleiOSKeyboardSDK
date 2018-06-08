@@ -340,10 +340,10 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
 }
 ```
 
-#### 9. API changeUserKeyboardSetting(key:NSInteger , value:Bool)
+#### 9. API setIMESettings(key:NSInteger , value:Bool)
 
 The custom class that extends BobbleKeyboardViewController can call changeUserKeyboardSetting() API to change keyboard's settings programmatically.
-Here are the possible values of key parameter: SETTING_AUTO_CAPITALIZATION, SETTING_SOUND, SETTING_WORD_SUGGESTION, SETTING_AUTO_CORRECTION, SETTING_LOWERCASE_KEY_CAPS.
+Here are the possible values of key parameter: WORD_SUGGESTION,AUTO_CORRECTION, AUTO_CAPITALIZATION, LOWERCASE_KEY_CAPS, KEYPAD_CLICK_SOUND.
 
 **Example :**
 
@@ -370,6 +370,131 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
     
     func topBarButtonClicked(sender: UIButton) {
         changeUserKeyboardSetting(SETTING_AUTO_CAPITALIZATION, false)
+    }
+}
+```
+#### 10. API showTopBar()
+
+The custom class that extends BobbleKeyboardViewController can call showTopBar() API to control the visibility of the top bar.
+
+**Example :**
+     
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        let topBarView:UIView = prepareTopBar()
+        setTopBar(topBarView)
+        showTopBar()
+    }
+    
+    func prepareTopBar() -> UIView {
+        // Place code here to generate custom view that need to be shown in the top bar
+        
+        // Example of a button in top bar that's going to show custom view on click
+        let topBarButton:UIButton = UIButton()
+        topBarButton.addTarget(self, action: #selector(SampleKeyboardViewController.topBarButtonClicked(sender:)), for:     UIControlEvents.touchUpInside)
+    }   
+}
+```     
+     
+#### 11. API hideTopBar()
+
+The custom class that extends BobbleKeyboardViewController can call hideTopBar() API to hide the visibility of the top bar.
+
+**Example :**
+     
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        let topBarView:UIView = prepareTopBar()
+        setTopBar(topBarView)
+        hideTopBar()
+    }
+    
+    func prepareTopBar() -> UIView {
+        // Place code here to generate custom view that need to be shown in the top bar
+        
+        // Example of a button in top bar that's going to show custom view on click
+        let topBarButton:UIButton = UIButton()
+        topBarButton.addTarget(self, action: #selector(SampleKeyboardViewController.topBarButtonClicked(sender:)), for:     UIControlEvents.touchUpInside)
+    }
+}
+```
+
+#### 12. API showOverlay(view: UIView)
+
+The custom class that extends BobbleKeyboardViewController can call showOverlay() API to render the passed along view ontop of the visible keyboard area.This view should allow for transparency so that the keyboard beneath may be visible
+     
+**Example :**
+     
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        let overlay = UIView()
+        overlat.backgroundColor = UIColor.orange
+        overlat.alpha = 0.5
+        showOverlay(view: overlay)
+    }
+}
+```
+
+#### 13. API hideOverlay()
+
+The custom class that extends BobbleKeyboardViewController can call hideOverlay() API to hide the overlay view.
+     
+**Example :**
+
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        hideOverlay()
+    }
+}
+```
+
+#### 14. API loadSuggestionView()
+
+The custom class that extends BobbleKeyboardViewController can call loadSuggestionView() API to load the passed in view onto the suggestion bar.
+     
+**Example :**
+
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        //width : flexible
+        //height : equalt to Suggestion Bar
+         let suggestionV = UIView(frame: CGRect(x: 45, y: 0, width: , height: ))
+           loadSuggestionView(view: suggestionV)
     }
 }
 ```
