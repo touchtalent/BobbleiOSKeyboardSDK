@@ -534,11 +534,10 @@ Parameter view: pass the object of KeyboardThemeModel(all keys are mendatory)
 for Custom theme
 
 parameters in KeyboardThemeModel -
-1. Word Suggestion
-2. Word Prediction
-3. Auto correct
-4. English and Arabic language
-1. keyboardBackgroundColor:String(pass the hex color string code)                                                              2. keyColor:String(pass the hex color string code)                                                                              3. suggestionBarColor:String(pass the hex color string code)                                      4.suggestionDividerColor:String(pass the hex color string code)                                      5.suggestionTextColor:String(pass the hex color string code)                                              6.keyTextcolor:String(pass the hex color string code)                                                  7.keyBorderColor:String(pass the hex color string code)                                             8.keyUnderLinecolor:String(pass the hex color string code)                                                  9.isThemeDarkType:Bool (true for dark theme and false for light theme)
+1. keyboardBackgroundColor:String(pass the hex color string code)
+2. keyColor:String(pass the hex color string code)
+3. suggestionBarColor:String(pass the hex color string code)
+4. suggestionDividerColor:String(pass the hex color string code)                                      5.suggestionTextColor:String(pass the hex color string code)                                              6.keyTextcolor:String(pass the hex color string code)                                                  7.keyBorderColor:String(pass the hex color string code)                                             8.keyUnderLinecolor:String(pass the hex color string code)                                                  9.isThemeDarkType:Bool (true for dark theme and false for light theme)
 
 for Default theme
 set parameter - nil
