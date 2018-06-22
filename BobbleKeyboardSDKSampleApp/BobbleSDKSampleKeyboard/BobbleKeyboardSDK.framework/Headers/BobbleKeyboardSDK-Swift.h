@@ -671,22 +671,6 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 /// \param view The view that needs to be add in Suggestion Bar.
 ///
 - (void)loadSuggestionViewWithView:(UIView * _Nonnull)view;
-/// The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard theme
-/// for Custom theme
-/// parameters in KeyboardThemeModel -
-/// keyboardBackgroundColor:String(pass the hex color string code)
-/// keyColor:String(pass the hex color string code)
-/// suggestionBarColor:String(pass the hex color string code)
-/// suggestionDividerColor:String(pass the hex color string code)
-/// suggestionTextColor:String(pass the hex color string code)
-/// keyTextcolor:String(pass the hex color string code)
-/// keyBorderColor:String(pass the hex color string code)
-/// keyUnderLinecolor:String(pass the hex color string code)
-/// isThemeDarkType:Bool (true for dark theme and false for light theme)
-/// for Default theme
-/// set parameter - nil
-/// \param view pass the object of KeyboardThemeModel(all keys are mendatory)
-///
 - (void)loadThemeWithThemeObject:(KeyboardThemeModel * _Nullable)themeObject;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
