@@ -500,7 +500,7 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
 ```
 #### 15. API onWordCommit()
 
-Client needs to set this delegate to recieve Input word after space and '.' and inplement requird onWordCommit(string: String) method.
+Client needs to set this delegate to recieve input word after space and '.'. It also needs to implement required onWordCommit(string: String) method.
       
 **Example :**     
 
@@ -509,18 +509,19 @@ Client needs to set this delegate to recieve Input word after space and '.' and 
 import UIKit
 import BobbleKeyboardSDK
 
-class SampleKeyboardViewController: BobbleKeyboardViewController , BobbleCallBack {
+class SampleKeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate {
     
     func onWordCommit(string: String) {
          print("callBackString:",string)
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         //inherit BobbleCallBack delegate
         //implement onWordCommit func
         //set delegate for onCommit callBack
-        setCallBackInputTarget(delegate: self)
+        setBobbleWordCommitDelegate(delegate: self)
         
     }
   }  
@@ -528,12 +529,10 @@ class SampleKeyboardViewController: BobbleKeyboardViewController , BobbleCallBac
       
 #### 16. API loadTheme(themeObject:KeyboardThemeModel?)
   
-The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard theme
-Parameter view: pass the object of KeyboardThemeModel(all keys are mendatory)
+The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard UI.
 
-for Custom theme
+Here are the parameters supported by KeyboardThemeModel. Please note all color values must be hex values.
 
-parameters in KeyboardThemeModel -
 1. keyboardBackgroundColor:String(pass the hex color string code)
 2. keyColor:String(pass the hex color string code)
 3. suggestionBarColor:String(pass the hex color string code)
@@ -544,8 +543,7 @@ parameters in KeyboardThemeModel -
 8. keyUnderLinecolor:String(pass the hex color string code)
 9. isThemeDarkType:Bool (true for dark theme and false for light theme)
 
-for Default theme
-set parameter - nil
+To set the default theme, please pass parameter as nil.
      
 **Example :**
   
@@ -560,8 +558,10 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         super.viewWillAppear(animated)
         
         //Customized theme
+     
+        let themeObject:KeyboardThemeModel = KeyboardThemeModel(keyboardBackgroundColor: "#f4b642", keyColor: "#f44d41",               suggestionBarColor: "#f441f1", suggestionDividerColor: "#85f441", suggestionTextColor: "#4194f4", keyTextcolor:               "843sdf", keyBorderColor: "#85fdsa", keyUnderLinecolor: "#54850s", isThemeDarkType: true)
         
-        let themeObject:KeyboardThemeModel = KeyboardThemeModel(keyboardBackgroundColor: "#f4b642", keyColor: "#f44d41",               suggestionBarColor: "#f441f1", suggestionDividerColor: "#85f441", suggestionTextColor: "#4194f4", keyTextcolor:               "843sdf", keyBorderColor: "#85fdsa", keyUnderLinecolor: "#54850s", isThemeDarkType: true) .                                   loadTheme(themeObject: themeObject)
+        loadTheme(themeObject: themeObject)
         
          //Default theme
         loadTheme(themeObject: nil)
