@@ -530,35 +530,35 @@ class SampleKeyboardViewController: BobbleKeyboardViewController , BobbleCallBac
   }  
   ```
       
-  #### 16. API loadTheme(themeObject:KeyboardThemeModel?)
+#### 16. API loadTheme(themeObject:KeyboardThemeModel?)
   
-   The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard theme
- - Parameter view: pass the object of KeyboardThemeModel(all keys are mendatory)
+The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard theme
+Parameter view: pass the object of KeyboardThemeModel(all keys are mendatory)
 
- for Custom theme
+for Custom theme
 
- parameters in KeyboardThemeModel -
- keyboardBackgroundColor:String(pass the hex color string code)
- keyColor:String(pass the hex color string code)
- suggestionBarColor:String(pass the hex color string code)
- suggestionDividerColor:String(pass the hex color string code)
- suggestionTextColor:String(pass the hex color string code)
- keyTextcolor:String(pass the hex color string code)
- keyBorderColor:String(pass the hex color string code)
- keyUnderLinecolor:String(pass the hex color string code)
- isThemeDarkType:Bool (true for dark theme and false for light theme)
+parameters in KeyboardThemeModel -
+keyboardBackgroundColor:String(pass the hex color string code)
+keyColor:String(pass the hex color string code)
+suggestionBarColor:String(pass the hex color string code)
+suggestionDividerColor:String(pass the hex color string code)
+suggestionTextColor:String(pass the hex color string code)
+keyTextcolor:String(pass the hex color string code)
+keyBorderColor:String(pass the hex color string code)
+keyUnderLinecolor:String(pass the hex color string code)
+isThemeDarkType:Bool (true for dark theme and false for light theme)
 
- for Default theme
- set parameter - nil
+for Default theme
+set parameter - nil
      
-  **Example :**
+**Example :**
   
-      ```swift
-      
-      import UIKit
-     import BobbleKeyboardSDK
+```swift
 
-    class SampleKeyboardViewController: BobbleKeyboardViewController {
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
     
     func onWordCommit(string: String) {
          print("callBackString:",string)
@@ -572,6 +572,6 @@ class SampleKeyboardViewController: BobbleKeyboardViewController , BobbleCallBac
         
          //Default theme
         loadTheme(themeObject: nil)
-    }
-    }  
-      ```
+   }
+ }  
+ ```
