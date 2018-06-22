@@ -560,9 +560,6 @@ import BobbleKeyboardSDK
 
 class SampleKeyboardViewController: BobbleKeyboardViewController {
     
-    func onWordCommit(string: String) {
-         print("callBackString:",string)
-    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
