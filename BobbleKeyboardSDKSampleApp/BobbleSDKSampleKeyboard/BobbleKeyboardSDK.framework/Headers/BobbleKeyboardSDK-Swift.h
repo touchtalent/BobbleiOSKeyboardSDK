@@ -250,6 +250,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK22BLEmoticonKeyboardView")
 @property (nonatomic, readonly, strong) UIColor * _Nonnull darkTheme;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull lightTheme;
 @property (nonatomic) BOOL dark_mode;
+- (UIColor * _Nonnull)hexStringToUIColorWithHex:(NSString * _Nonnull)hex SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (void)backspaceUp;
@@ -319,6 +320,7 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK23DefaultSettingsDelegate_")
 @protocol UITextInput;
 @class LayoutConstants;
 @class GlobalColors;
+@class KeyboardThemeModel;
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
 @interface KeyboardViewController : UIInputViewController <DefaultSettingsDelegate>
@@ -451,6 +453,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) SWIFT_METATYPE(Globa
 - (ExtraView * _Nullable)createBanner SWIFT_WARN_UNUSED_RESULT;
 - (void)setBannerWithView:(UIView * _Nonnull)view;
 - (ExtraView * _Nullable)createSettings SWIFT_WARN_UNUSED_RESULT;
+- (void)themeChangeAccordinglyWithThemeObject:(KeyboardThemeModel * _Nullable)themeObject;
+- (UIColor * _Nonnull)hexStringToUIColorWithHex:(NSString * _Nonnull)hex SWIFT_WARN_UNUSED_RESULT;
 - (void)toggleSettingsForBack;
 @end
 
@@ -601,6 +605,12 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK14BackspaceShape")
 @end
 
 
+SWIFT_CLASS("_TtC17BobbleKeyboardSDK20BobbleCallBackString")
+@interface BobbleCallBackString : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 /// Custom keyboard view controller
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 @interface BobbleKeyboardViewController : BLKeyboardViewController
@@ -661,6 +671,23 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 /// \param view The view that needs to be add in Suggestion Bar.
 ///
 - (void)loadSuggestionViewWithView:(UIView * _Nonnull)view;
+/// The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard theme
+/// for Custom theme
+/// parameters in KeyboardThemeModel -
+/// keyboardBackgroundColor:String(pass the hex color string code)
+/// keyColor:String(pass the hex color string code)
+/// suggestionBarColor:String(pass the hex color string code)
+/// suggestionDividerColor:String(pass the hex color string code)
+/// suggestionTextColor:String(pass the hex color string code)
+/// keyTextcolor:String(pass the hex color string code)
+/// keyBorderColor:String(pass the hex color string code)
+/// keyUnderLinecolor:String(pass the hex color string code)
+/// isThemeDarkType:Bool (true for dark theme and false for light theme)
+/// for Default theme
+/// set parameter - nil
+/// \param view pass the object of KeyboardThemeModel(all keys are mendatory)
+///
+- (void)loadThemeWithThemeObject:(KeyboardThemeModel * _Nullable)themeObject;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -686,6 +713,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK15DefaultSettings")
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UIColor * _Nonnull)hexStringToUIColorWithHex:(NSString * _Nonnull)hex SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)updateAppearanceWithDark:(BOOL)dark;
 - (void)toggleSettingWithSender:(UISwitch * _Nonnull)sender;
@@ -846,7 +874,10 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK11KeyboardKey")
 - (void)layoutPopupIfNeeded;
 - (void)redrawText;
 - (void)redrawShape;
+- (BOOL)isKeyPresentInUserDefaultsWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (void)updateColors;
+- (void)themeChangeWithNotification:(NSNotification * _Nonnull)notification;
+- (UIColor * _Nonnull)hexStringToUIColorWithHex:(NSString * _Nonnull)hex SWIFT_WARN_UNUSED_RESULT;
 - (void)layoutPopupWithDir:(enum Direction)dir;
 - (void)configurePopupWithDirection:(enum Direction)direction;
 - (void)showEmojiPopup;
@@ -945,6 +976,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL shouldPoolKeys;
 - (CGRect)frameForPopupWithKey:(KeyboardKey * _Nonnull)key direction:(enum Direction)direction SWIFT_WARN_UNUSED_RESULT;
 - (void)willShowPopupWithKey:(KeyboardKey * _Nonnull)key direction:(enum Direction)direction;
 - (void)willHidePopupWithKey:(KeyboardKey * _Nonnull)key;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC17BobbleKeyboardSDK18KeyboardThemeModel")
+@interface KeyboardThemeModel : NSObject
+@property (nonatomic, copy) NSString * _Nonnull keyboardBackgroundColor;
+@property (nonatomic, copy) NSString * _Nonnull keyColor;
+@property (nonatomic, copy) NSString * _Nonnull suggestionBarColor;
+@property (nonatomic, copy) NSString * _Nonnull suggestionDividerColor;
+@property (nonatomic, copy) NSString * _Nonnull suggestionTextColor;
+@property (nonatomic, copy) NSString * _Nonnull keyTextcolor;
+@property (nonatomic, copy) NSString * _Nonnull keyBorderColor;
+@property (nonatomic, copy) NSString * _Nonnull keyUnderLinecolor;
+@property (nonatomic) BOOL isThemeDarkType;
+- (nonnull instancetype)initWithKeyboardBackgroundColor:(NSString * _Nonnull)keyboardBackgroundColor keyColor:(NSString * _Nonnull)keyColor suggestionBarColor:(NSString * _Nonnull)suggestionBarColor suggestionDividerColor:(NSString * _Nonnull)suggestionDividerColor suggestionTextColor:(NSString * _Nonnull)suggestionTextColor keyTextcolor:(NSString * _Nonnull)keyTextcolor keyBorderColor:(NSString * _Nonnull)keyBorderColor keyUnderLinecolor:(NSString * _Nonnull)keyUnderLinecolor isThemeDarkType:(BOOL)isThemeDarkType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end

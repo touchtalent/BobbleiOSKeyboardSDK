@@ -15,7 +15,12 @@ import UIKit
 import BobbleKeyboardSDK
 //import TextInputView
 
-class KeyboardViewController: BobbleKeyboardViewController {
+class KeyboardViewController: BobbleKeyboardViewController, BobbleCallBack {
+    func onWordCommit(string: String) {
+         print("callBackString:",string)
+    }
+    
+    
     
     required convenience init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.init(nibName: nil, bundle: nil)
@@ -29,6 +34,22 @@ class KeyboardViewController: BobbleKeyboardViewController {
     var vw:TextInputView = TextInputView()
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        
+        //set delegate for onCommit callBack
+      //  setCallBackInputTarget(delegate: self)
+        
+        
+        
+       //Customized theme
+        
+//        let themeObject:KeyboardThemeModel = KeyboardThemeModel(keyboardBackgroundColor: "#f4b642", keyColor: "#f44d41", suggestionBarColor: "#f441f1", suggestionDividerColor: "#85f441", suggestionTextColor: "#4194f4", keyTextcolor: "843sdf", keyBorderColor: "#85fdsa", keyUnderLinecolor: "#54850s", isThemeDarkType: true)
+//         loadTheme(themeObject: themeObject)
+        
+        
+        
+        
+        
         
         
         
