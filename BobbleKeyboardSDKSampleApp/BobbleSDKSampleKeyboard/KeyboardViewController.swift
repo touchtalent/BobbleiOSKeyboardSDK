@@ -15,7 +15,7 @@ import UIKit
 import BobbleKeyboardSDK
 //import TextInputView
 
-class KeyboardViewController: BobbleKeyboardViewController, BobbleCallBack {
+class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate {
     
     
     func onWordCommit(string: String) {
@@ -40,7 +40,7 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleCallBack {
         // inherit BobbleCallBack delegate
         //implement onWordCommit func
         //set delegate for onCommit callBack
-      //  setCallBackInputTarget(delegate: self)
+        setBobbleWordCommitDelegate(delegate: self)
         
         
         

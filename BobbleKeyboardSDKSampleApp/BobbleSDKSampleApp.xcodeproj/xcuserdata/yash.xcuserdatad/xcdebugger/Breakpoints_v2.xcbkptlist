@@ -100,7 +100,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "551357501.565204"
+            timestampString = "551364187.142586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -116,27 +116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "551357501.565581"
+            timestampString = "551364187.143012"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "551357501.5657949"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
             landmarkName = "KeyboardViewController"
             landmarkType = "3">
             <Locations>
@@ -148,7 +132,7 @@
                   moduleName = "BobbleSDKSampleKeyboard"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-                  timestampString = "551357501.993528"
+                  timestampString = "551364197.700591"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -163,11 +147,11 @@
                   moduleName = "BobbleSDKSampleKeyboard"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-                  timestampString = "551357501.995261"
+                  timestampString = "551364197.702513"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
                   offsetFromSymbolStart = "60">
                </Location>
             </Locations>
@@ -180,45 +164,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "551357501.566004"
+            timestampString = "551364187.1432379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "KeyboardViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
+            timestampString = "551364187.143448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
             landmarkName = "init(nibName:bundle:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BobbleSDKSampleKeyboard.KeyboardViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;BobbleSDKSampleKeyboard.KeyboardViewController&gt;"
-                  moduleName = "BobbleSDKSampleKeyboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-                  timestampString = "551357502.0025001"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BobbleSDKSampleKeyboard.KeyboardViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;BobbleSDKSampleKeyboard.KeyboardViewController&gt;"
-                  moduleName = "BobbleSDKSampleKeyboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-                  timestampString = "551357502.004439"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -228,60 +196,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "551357501.566209"
+            timestampString = "551364187.143657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "init(coder:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BobbleSDKSampleKeyboard.KeyboardViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;BobbleSDKSampleKeyboard.KeyboardViewController&gt;"
-                  moduleName = "BobbleSDKSampleKeyboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-                  timestampString = "551357502.009025"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BobbleSDKSampleKeyboard.KeyboardViewController.vw.getter : BobbleKeyboardSDK.TextInputView"
-                  moduleName = "BobbleSDKSampleKeyboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-                  timestampString = "551357502.01081"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BobbleSDKSampleKeyboard.KeyboardViewController.vw.setter : BobbleKeyboardSDK.TextInputView"
-                  moduleName = "BobbleSDKSampleKeyboard"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-                  timestampString = "551357502.012554"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "120">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -291,7 +212,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "551357501.566412"
+            timestampString = "551364187.143862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -307,12 +228,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "551357501.566617"
+            timestampString = "551364187.144145"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
             landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
+            timestampString = "551364187.144496"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "init(coder:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleKeyboard.KeyboardViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;BobbleSDKSampleKeyboard.KeyboardViewController&gt;"
+                  moduleName = "BobbleSDKSampleKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
+                  timestampString = "551364198.987666"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleKeyboard.KeyboardViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;BobbleSDKSampleKeyboard.KeyboardViewController&gt;"
+                  moduleName = "BobbleSDKSampleKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/sampleCloneForUpload/BobbleiOSKeyboardSDK/BobbleKeyboardSDKSampleApp/BobbleSDKSampleKeyboard/KeyboardViewController.swift"
+                  timestampString = "551364198.989888"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
+            timestampString = "551364187.144835"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "onWordCommit(string:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
