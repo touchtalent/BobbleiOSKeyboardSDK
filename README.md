@@ -500,21 +500,20 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
 ```
 #### 15. API onWordCommit()
 
-  Client needs to set this delegate to recieve Input string after space and '.'
- - Precondition:
-  protocol - BobbleCallBack (Inherit this protocol in your class)
-  @required - onWordCommit(string: String) to get call Back
-
-  - Parameter - set this parameters where you want to implement onCommit method e.g - "self"
+Client needs to set this delegate to recieve Input string after space and '.'
+Precondition:
+protocol - BobbleCallBack (Inherit this protocol in your class)
+@required - onWordCommit(string: String) to get call Back
+Parameter - set this parameters where you want to implement onCommit method e.g - "self"
       
 **Example :**     
 
-      ```swift
+```swift
       
-      import UIKit
-     import BobbleKeyboardSDK
+import UIKit
+import BobbleKeyboardSDK
 
-    class SampleKeyboardViewController: BobbleKeyboardViewController , BobbleCallBack {
+class SampleKeyboardViewController: BobbleKeyboardViewController , BobbleCallBack {
     
     func onWordCommit(string: String) {
          print("callBackString:",string)
@@ -528,8 +527,8 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
         setCallBackInputTarget(delegate: self)
         
     }
-    }  
-      ```
+  }  
+  ```
       
   #### 16. API loadTheme(themeObject:KeyboardThemeModel?)
   
