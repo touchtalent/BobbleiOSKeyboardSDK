@@ -507,6 +507,8 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
      
       - Parameter - set this parameters where you want to implement onCommit method e.g - "self"
       
+**Example :**     
+
       ```swift
       
       import UIKit
@@ -550,7 +552,8 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
      for Default theme
      set parameter - nil
      
-     
+  **Example :**
+  
       ```swift
       
       import UIKit
