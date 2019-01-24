@@ -1,15 +1,10 @@
-
-/*
- *  ____        _     _     _      ___ __  __ _____   ____  ____  _  __
- * | __ )  ___ | |__ | |__ | | ___|_ _|  \/  | ____| / ___||  _ \| |/ /
- * |  _ \ / _ \| '_ \| '_ \| |/ _ \| || |\/| |  _|   \___ \| | | | ' /
- * | |_) | (_) | |_) | |_) | |  __/| || |  | | |___   ___) | |_| | . \
- * |____/ \___/|_.__/|_.__/|_|\___|___|_|  |_|_____| |____/|____/|_|\_\
- *
- * Copyright (C) BobbleKeyboard@2018 - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
- */
+//
+//  ViewController.swift
+//  BobbleSDKSampleApp
+//
+//  Created by Yash Sikarvar on 11/12/18.
+//  Copyright © 2018 Bobble Keyboard. All rights reserved.
+//
 
 import UIKit
 
@@ -17,14 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Do any additional setup after loading the view.
     }
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

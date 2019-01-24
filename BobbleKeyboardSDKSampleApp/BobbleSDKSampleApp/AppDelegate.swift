@@ -17,13 +17,52 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var parentBundleId:String?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
 
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
+       print(url)
+        var dict = [String:String]()
+        let components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
+        if let queryItems = components.queryItems {
+            for item in queryItems {
+                dict[item.name] = item.value!
+            }
+        }
+        
+        let openPage:String  = dict["openPage"] ?? ""
+        let bundleId:String  = dict["bundleId"] ?? ""
+        
+        if openPage == "textfield"
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "OpenViewControllerForTextField")
+            self.window?.rootViewController = controller
+            self.window?.makeKeyAndVisible()
+        }
+        
+        if openPage == "camera"
+        {
+           // let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           // let controller = storyboard.instantiateViewController(withIdentifier: "QRCodeScannerViewController")
+            self.window?.rootViewController = QRCodeScannerViewController()
+            self.window?.makeKeyAndVisible()
+          //  self.present(controller, animated: true, completion: nil)
+        }
+        
+        
+        parentBundleId = bundleId
+        print(dict)
+        return true
+    }
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
