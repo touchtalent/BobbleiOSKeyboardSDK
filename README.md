@@ -373,3 +373,16 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
     }
 }
 ```
+ #### 17.KeyboardMode
+
+Default 0(Alphabets),1(numeric),2(symbols)
+Email - 3(Alphabets),4(numeric),5(symbols)
+Url - 6(Alphabets),7(numeric),8(symbols)
+continue arrow- 10(Alphabets),11(numeric),12(symbols)
+Arrow + email -13(Alphabets), 14(numeric),15(symbols)
+Arrow + url - 16(Alphabets),17(numeric),18(symbols)
+Blue arrow - 20(Alphabets),21,22(symbols)
+Blue arrow + email -23(Alphabets),24(numeric),25(symbols)
+Blue arrow + Url - 26(Alphabets),27(numeric),28(symbols)
+Search - 30(Alphabets),31(numeric),32(symbols)
+Search + email -33(Alphabets),34(numeric),35(symbols)
