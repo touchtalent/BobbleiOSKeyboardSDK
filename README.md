@@ -373,7 +373,7 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
     }
 }
 ```
- #### 17.KeyboardMode
+ #### 10.KeyboardMode
 
 Default 0(Alphabets),1(numeric),2(symbols)
 Email - 3(Alphabets),4(numeric),5(symbols)
