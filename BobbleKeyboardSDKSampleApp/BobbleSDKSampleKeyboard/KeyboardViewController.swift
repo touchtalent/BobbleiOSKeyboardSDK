@@ -16,7 +16,8 @@ import BobbleKeyboardSDK
 import LocalAuthentication
 
 
-class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate, KeyboardReturnButtonClickedDelegate{
+class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate{
+    
    
     
     // TextInputViewDelegate
@@ -83,7 +84,7 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setBobbleWordCommitDelegate(delegate: self)
-        setKeyboardReturnButtonDelegate(delegate: self)
+       // setKeyboardReturnButtonDelegate(delegate: self)
         TouchIdDelegate(delegate: self)
         topBar = getTopBar()
         setTopBar(view: topBar)
@@ -123,10 +124,11 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
         InputViewBy.frame = CGRect(x: 0, y:0, width: self.view.bounds.width, height:200)
         
         let txtInput:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText.frame.size.width
-            , height: InputViewBy.viewForText.frame.size.height))
+            , height: InputViewBy.viewForText.frame.size.height ))
         InputViewBy.viewForText.addSubview(txtInput)
-        txtInput.setPlaceHolder(str: " set place holder", placeholderColor: UIColor.lightGray)
+        txtInput.setPlaceHolder(str: " set place holder", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
         txtInput.backgroundColor = UIColor.red
+        txtInput.textFont =  UIFont(name: "Helvetica", size: 20)!
         txtInput.textColor = UIColor.black
         txtInput.textDelegate = self
         
@@ -135,8 +137,9 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
         let txtInput1:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText1.frame.size.width
             , height: InputViewBy.viewForText1.frame.size.height))
         InputViewBy.viewForText1.addSubview(txtInput1)
-        txtInput1.setPlaceHolder(str: " set place holder 1", placeholderColor: UIColor.lightGray)
+        txtInput1.setPlaceHolder(str: " set place holder 1", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
         txtInput1.backgroundColor = UIColor.red
+        txtInput1.textFont =  UIFont(name: "Helvetica", size: 20)!
         txtInput1.textColor = UIColor.black
         txtInput1.textDelegate = self
         
@@ -147,9 +150,10 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
         let txtInput2:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText2.frame.size.width
             , height: InputViewBy.viewForText2.frame.size.height))
         InputViewBy.viewForText2.addSubview(txtInput2)
-        txtInput2.setPlaceHolder(str: " set place holder 2", placeholderColor: UIColor.lightGray)
+        txtInput2.setPlaceHolder(str: " set place holder 2", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
         txtInput2.backgroundColor = UIColor.red
         txtInput2.textColor = UIColor.black
+        txtInput2.textFont =  UIFont(name: "Helvetica", size: 20)!
         txtInput2.textDelegate = self
         
         showCustomView(view: InputViewBy)
