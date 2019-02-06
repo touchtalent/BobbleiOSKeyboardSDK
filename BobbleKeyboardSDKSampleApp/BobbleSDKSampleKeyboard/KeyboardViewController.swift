@@ -16,7 +16,7 @@ import BobbleKeyboardSDK
 import LocalAuthentication
 
 
-class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate{
+class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate, UITextFieldDelegate,TextInputDelegate{
     
    
     
@@ -153,7 +153,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
         txtInput2.setPlaceHolder(str: " set place holder 2", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
         txtInput2.backgroundColor = UIColor.red
         txtInput2.textColor = UIColor.black
-        txtInput2.textFont =  UIFont(name: "Helvetica", size: 20)!
+        txtInput22.textFont =  UIFont(name: "Helvetica", size: 20)!
         txtInput2.textDelegate = self
         
         showCustomView(view: InputViewBy)
