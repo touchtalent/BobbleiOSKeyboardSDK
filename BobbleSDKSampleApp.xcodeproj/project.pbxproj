@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		482C0A71217E103F002D740F /* KeyboardTopbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C0A70217E103F002D740F /* KeyboardTopbar.swift */; };
+		482C0A74217E1059002D740F /* KeyboardTopbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482C0A73217E1059002D740F /* KeyboardTopbar.xib */; };
+		482C0A76217E3915002D740F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482C0A75217E3915002D740F /* Media.xcassets */; };
+		482C0A79217E4513002D740F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C0A78217E4513002D740F /* Extensions.swift */; };
+		482C0A7A217F0AD3002D740F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C0A78217E4513002D740F /* Extensions.swift */; };
+		482C0A7B217F0AD7002D740F /* KeyboardTopbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C0A70217E103F002D740F /* KeyboardTopbar.swift */; };
+		482C0A7C217F0ADC002D740F /* KeyboardTopbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482C0A73217E1059002D740F /* KeyboardTopbar.xib */; };
+		482C0A82217F1A34002D740F /* ZomatoHomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482C0A81217F1A34002D740F /* ZomatoHomeView.xib */; };
+		482C0A83217F1A34002D740F /* ZomatoHomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482C0A81217F1A34002D740F /* ZomatoHomeView.xib */; };
+		482C0A85217F1D9E002D740F /* ZomatoHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C0A84217F1D9E002D740F /* ZomatoHomeView.swift */; };
+		482C0A86217F1D9E002D740F /* ZomatoHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482C0A84217F1D9E002D740F /* ZomatoHomeView.swift */; };
+		488C575A21802C1A00C1A3E4 /* KeyboardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C575921802C1A00C1A3E4 /* KeyboardOverlay.swift */; };
+		488C575C21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */; };
+		488C575D21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */; };
+		488C575E21802C3400C1A3E4 /* KeyboardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C575921802C1A00C1A3E4 /* KeyboardOverlay.swift */; };
+		D3045F7721B7CF04001C978F /* SystemApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7221B7CF04001C978F /* SystemApplicationManager.swift */; };
+		D3045F7821B7CF04001C978F /* SystemApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7421B7CF04001C978F /* SystemApplication.swift */; };
+		D3045F8421B904EC001C978F /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7A21B904EC001C978F /* QRCodeReader.swift */; };
+		D3045F8521B904EC001C978F /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7B21B904EC001C978F /* QRCodeReaderViewControllerDelegate.swift */; };
+		D3045F8621B904EC001C978F /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7C21B904EC001C978F /* QRCodeReaderViewContainer.swift */; };
+		D3045F8721B904EC001C978F /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7D21B904EC001C978F /* QRCodeReaderViewControllerBuilder.swift */; };
+		D3045F8821B904EC001C978F /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7E21B904EC001C978F /* QRCodeReaderView.swift */; };
+		D3045F8921B904EC001C978F /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7F21B904EC001C978F /* QRCodeReaderResult.swift */; };
+		D3045F8A21B904EC001C978F /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F8021B904EC001C978F /* SwitchCameraButton.swift */; };
+		D3045F8B21B904EC001C978F /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F8121B904EC001C978F /* QRCodeReaderViewController.swift */; };
+		D3045F8C21B904EC001C978F /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F8221B904EC001C978F /* ToggleTorchButton.swift */; };
+		D3045F8D21B904EC001C978F /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F8321B904EC001C978F /* ReaderOverlayView.swift */; };
+		D311F14C2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; };
+		D311F14D2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; };
+		D311F1522175BA03007AE593 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */; };
+		D311F1542175BAA2007AE593 /* BobbleKeyboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D325C6D821E5DA0D00F6DB46 /* InputViewByNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = D325C6D721E5DA0D00F6DB46 /* InputViewByNib.xib */; };
+		D325C6DA21E5DD3600F6DB46 /* InputViewByNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */; };
+		D325C6DB21E5F1A000F6DB46 /* InputViewByNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = D325C6D721E5DA0D00F6DB46 /* InputViewByNib.xib */; };
+		D325C6DC21E5F1B700F6DB46 /* InputViewByNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */; };
+		D356188021BF977A0008F8BD /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356187F21BF977A0008F8BD /* QRCodeScannerViewController.swift */; };
+		D356188221BFB7740008F8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356188121BFB7740008F8BD /* ViewController.swift */; };
+		D356188A21C11BBA0008F8BD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D356188921C11BBA0008F8BD /* LocalAuthentication.framework */; };
+		D3DF7E4A206E6478000F43D2 /* OpenViewControllerForTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E3E206E6478000F43D2 /* OpenViewControllerForTextField.swift */; };
+		D3DF7E4B206E6478000F43D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3DF7E3F206E6478000F43D2 /* Assets.xcassets */; };
+		D3DF7E4C206E6478000F43D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DF7E40206E6478000F43D2 /* LaunchScreen.storyboard */; };
+		D3DF7E4D206E6478000F43D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DF7E42206E6478000F43D2 /* Main.storyboard */; };
+		D3DF7E4E206E6478000F43D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E44206E6478000F43D2 /* AppDelegate.swift */; };
+		D3DF7E5F206E67C6000F43D2 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */; };
+		D3DF7E68206E67F1000F43D2 /* BobbleSDKSampleKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D3DF7E66206E67C6000F43D2 /* BobbleSDKSampleKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3DF7E69206E67F1000F43D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3B4D2F3206501C000E91CFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3DF7E5D206E67C6000F43D2;
+			remoteInfo = BobbleSDKSampleKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3B4D3242065028600E91CFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D311F1542175BAA2007AE593 /* BobbleKeyboardSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DF7E6B206E67F1000F43D2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D3DF7E68206E67F1000F43D2 /* BobbleSDKSampleKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		482C0A6C217E0EEE002D740F /* BackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
+		482C0A70217E103F002D740F /* KeyboardTopbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTopbar.swift; sourceTree = "<group>"; };
+		482C0A73217E1059002D740F /* KeyboardTopbar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardTopbar.xib; sourceTree = "<group>"; };
+		482C0A75217E3915002D740F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		482C0A78217E4513002D740F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		482C0A81217F1A34002D740F /* ZomatoHomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZomatoHomeView.xib; sourceTree = "<group>"; };
+		482C0A84217F1D9E002D740F /* ZomatoHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomatoHomeView.swift; sourceTree = "<group>"; };
+		488C575921802C1A00C1A3E4 /* KeyboardOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardOverlay.swift; sourceTree = "<group>"; };
+		488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardOverlay.xib; sourceTree = "<group>"; };
+		D3045F6E21B7CEC5001C978F /* BobbleSDKSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BobbleSDKSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		D3045F7021B7CF04001C978F /* UIImage-ApplicationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-ApplicationIcons.h"; sourceTree = "<group>"; };
+		D3045F7121B7CF04001C978F /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
+		D3045F7221B7CF04001C978F /* SystemApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemApplicationManager.swift; sourceTree = "<group>"; };
+		D3045F7321B7CF04001C978F /* LSResourceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSResourceProxy.h; sourceTree = "<group>"; };
+		D3045F7421B7CF04001C978F /* SystemApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemApplication.swift; sourceTree = "<group>"; };
+		D3045F7521B7CF04001C978F /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
+		D3045F7621B7CF04001C978F /* LSBundleProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBundleProxy.h; sourceTree = "<group>"; };
+		D3045F7A21B904EC001C978F /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		D3045F7B21B904EC001C978F /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D3045F7C21B904EC001C978F /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
+		D3045F7D21B904EC001C978F /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
+		D3045F7E21B904EC001C978F /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		D3045F7F21B904EC001C978F /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		D3045F8021B904EC001C978F /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		D3045F8121B904EC001C978F /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		D3045F8221B904EC001C978F /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		D3045F8321B904EC001C978F /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BobbleKeyboardSDK.framework; sourceTree = "<group>"; };
+		D325C6D721E5DA0D00F6DB46 /* InputViewByNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewByNib.xib; sourceTree = "<group>"; };
+		D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewByNib.swift; sourceTree = "<group>"; };
+		D356187F21BF977A0008F8BD /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		D356188121BFB7740008F8BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D356188921C11BBA0008F8BD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		D356188F21C266B40008F8BD /* BobbleSDKSampleKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BobbleSDKSampleKeyboard.entitlements; sourceTree = "<group>"; };
+		D356189021C2675B0008F8BD /* BobbleSDKSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BobbleSDKSampleApp.entitlements; sourceTree = "<group>"; };
+		D3B4D2FB206501C000E91CFF /* BobbleSDKSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BobbleSDKSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DF7E3E206E6478000F43D2 /* OpenViewControllerForTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenViewControllerForTextField.swift; sourceTree = "<group>"; };
+		D3DF7E3F206E6478000F43D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3DF7E41206E6478000F43D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3DF7E43206E6478000F43D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3DF7E44206E6478000F43D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3DF7E45206E6478000F43D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D3DF7E49206E6478000F43D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3DF7E66206E67C6000F43D2 /* BobbleSDKSampleKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BobbleSDKSampleKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3B4D2F8206501C000E91CFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D311F14C2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DF7E60206E67C6000F43D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D356188A21C11BBA0008F8BD /* LocalAuthentication.framework in Frameworks */,
+				D311F14D2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		482C0A72217E1043002D740F /* Topbar */ = {
+			isa = PBXGroup;
+			children = (
+				482C0A70217E103F002D740F /* KeyboardTopbar.swift */,
+				482C0A73217E1059002D740F /* KeyboardTopbar.xib */,
+			);
+			path = Topbar;
+			sourceTree = "<group>";
+		};
+		482C0A77217E4506002D740F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				482C0A78217E4513002D740F /* Extensions.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		482C0A7D217F1A0E002D740F /* Zomato */ = {
+			isa = PBXGroup;
+			children = (
+				482C0A81217F1A34002D740F /* ZomatoHomeView.xib */,
+				482C0A84217F1D9E002D740F /* ZomatoHomeView.swift */,
+			);
+			path = Zomato;
+			sourceTree = "<group>";
+		};
+		488C575821802C0200C1A3E4 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				488C575921802C1A00C1A3E4 /* KeyboardOverlay.swift */,
+				488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		D3045F6F21B7CF04001C978F /* Private Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D3045F7021B7CF04001C978F /* UIImage-ApplicationIcons.h */,
+				D3045F7121B7CF04001C978F /* LSApplicationProxy.h */,
+				D3045F7221B7CF04001C978F /* SystemApplicationManager.swift */,
+				D3045F7321B7CF04001C978F /* LSResourceProxy.h */,
+				D3045F7421B7CF04001C978F /* SystemApplication.swift */,
+				D3045F7521B7CF04001C978F /* LSApplicationWorkspace.h */,
+				D3045F7621B7CF04001C978F /* LSBundleProxy.h */,
+			);
+			path = "Private Headers";
+			sourceTree = "<group>";
+		};
+		D3045F7921B904EC001C978F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D3045F7A21B904EC001C978F /* QRCodeReader.swift */,
+				D3045F7B21B904EC001C978F /* QRCodeReaderViewControllerDelegate.swift */,
+				D3045F7C21B904EC001C978F /* QRCodeReaderViewContainer.swift */,
+				D3045F7D21B904EC001C978F /* QRCodeReaderViewControllerBuilder.swift */,
+				D3045F7E21B904EC001C978F /* QRCodeReaderView.swift */,
+				D3045F7F21B904EC001C978F /* QRCodeReaderResult.swift */,
+				D3045F8021B904EC001C978F /* SwitchCameraButton.swift */,
+				D3045F8121B904EC001C978F /* QRCodeReaderViewController.swift */,
+				D3045F8221B904EC001C978F /* ToggleTorchButton.swift */,
+				D3045F8321B904EC001C978F /* ReaderOverlayView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D325C6D621E5D96400F6DB46 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				D325C6D721E5DA0D00F6DB46 /* InputViewByNib.xib */,
+				D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		D356188821C11BBA0008F8BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D356188921C11BBA0008F8BD /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B4D2F2206501C000E91CFF = {
+			isa = PBXGroup;
+			children = (
+				D3045F6E21B7CEC5001C978F /* BobbleSDKSampleApp-Bridging-Header.h */,
+				D3DF7E3D206E6478000F43D2 /* BobbleSDKSampleApp */,
+				D3DF7E46206E6478000F43D2 /* BobbleSDKSampleKeyboard */,
+				D3B4D2FC206501C000E91CFF /* Products */,
+				D356188821C11BBA0008F8BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3B4D2FC206501C000E91CFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3B4D2FB206501C000E91CFF /* BobbleSDKSampleApp.app */,
+				D3DF7E66206E67C6000F43D2 /* BobbleSDKSampleKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3DF7E3D206E6478000F43D2 /* BobbleSDKSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				D356189021C2675B0008F8BD /* BobbleSDKSampleApp.entitlements */,
+				D3045F7921B904EC001C978F /* Sources */,
+				D3045F6F21B7CF04001C978F /* Private Headers */,
+				D3DF7E3E206E6478000F43D2 /* OpenViewControllerForTextField.swift */,
+				D356188121BFB7740008F8BD /* ViewController.swift */,
+				D356187F21BF977A0008F8BD /* QRCodeScannerViewController.swift */,
+				D3DF7E3F206E6478000F43D2 /* Assets.xcassets */,
+				D3DF7E40206E6478000F43D2 /* LaunchScreen.storyboard */,
+				D3DF7E42206E6478000F43D2 /* Main.storyboard */,
+				D3DF7E44206E6478000F43D2 /* AppDelegate.swift */,
+				D3DF7E45206E6478000F43D2 /* Info.plist */,
+			);
+			path = BobbleSDKSampleApp;
+			sourceTree = "<group>";
+		};
+		D3DF7E46206E6478000F43D2 /* BobbleSDKSampleKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D325C6D621E5D96400F6DB46 /* InputView */,
+				D356188F21C266B40008F8BD /* BobbleSDKSampleKeyboard.entitlements */,
+				488C575821802C0200C1A3E4 /* Overlay */,
+				482C0A7D217F1A0E002D740F /* Zomato */,
+				482C0A77217E4506002D740F /* Classes */,
+				482C0A72217E1043002D740F /* Topbar */,
+				D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */,
+				D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */,
+				D3DF7E49206E6478000F43D2 /* Info.plist */,
+				482C0A6C217E0EEE002D740F /* BackupViewController.swift */,
+				482C0A75217E3915002D740F /* Media.xcassets */,
+			);
+			path = BobbleSDKSampleKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3B4D2FA206501C000E91CFF /* BobbleSDKSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B4D30D206501C000E91CFF /* Build configuration list for PBXNativeTarget "BobbleSDKSampleApp" */;
+			buildPhases = (
+				D3B4D2F7206501C000E91CFF /* Sources */,
+				D3B4D2F8206501C000E91CFF /* Frameworks */,
+				D3B4D2F9206501C000E91CFF /* Resources */,
+				D3B4D3242065028600E91CFF /* Embed Frameworks */,
+				D3DF7E6B206E67F1000F43D2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3DF7E6A206E67F1000F43D2 /* PBXTargetDependency */,
+			);
+			name = BobbleSDKSampleApp;
+			productName = Zkeyboard;
+			productReference = D3B4D2FB206501C000E91CFF /* BobbleSDKSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3DF7E5D206E67C6000F43D2 /* BobbleSDKSampleKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DF7E63206E67C6000F43D2 /* Build configuration list for PBXNativeTarget "BobbleSDKSampleKeyboard" */;
+			buildPhases = (
+				D3DF7E5E206E67C6000F43D2 /* Sources */,
+				D3DF7E60206E67C6000F43D2 /* Frameworks */,
+				D3DF7E62206E67C6000F43D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BobbleSDKSampleKeyboard;
+			productName = ZKeyboardE;
+			productReference = D3DF7E66206E67C6000F43D2 /* BobbleSDKSampleKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3B4D2F3206501C000E91CFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Bobble Keyboard";
+				TargetAttributes = {
+					D3B4D2FA206501C000E91CFF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					D3DF7E5D206E67C6000F43D2 = {
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D3B4D2F6206501C000E91CFF /* Build configuration list for PBXProject "BobbleSDKSampleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3B4D2F2206501C000E91CFF;
+			productRefGroup = D3B4D2FC206501C000E91CFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3B4D2FA206501C000E91CFF /* BobbleSDKSampleApp */,
+				D3DF7E5D206E67C6000F43D2 /* BobbleSDKSampleKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3B4D2F9206501C000E91CFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482C0A7C217F0ADC002D740F /* KeyboardTopbar.xib in Resources */,
+				D3DF7E4B206E6478000F43D2 /* Assets.xcassets in Resources */,
+				D3DF7E4D206E6478000F43D2 /* Main.storyboard in Resources */,
+				D325C6DB21E5F1A000F6DB46 /* InputViewByNib.xib in Resources */,
+				D3DF7E4C206E6478000F43D2 /* LaunchScreen.storyboard in Resources */,
+				482C0A82217F1A34002D740F /* ZomatoHomeView.xib in Resources */,
+				488C575C21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DF7E62206E67C6000F43D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482C0A76217E3915002D740F /* Media.xcassets in Resources */,
+				D325C6D821E5DA0D00F6DB46 /* InputViewByNib.xib in Resources */,
+				482C0A74217E1059002D740F /* KeyboardTopbar.xib in Resources */,
+				482C0A83217F1A34002D740F /* ZomatoHomeView.xib in Resources */,
+				488C575D21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3B4D2F7206501C000E91CFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3045F8921B904EC001C978F /* QRCodeReaderResult.swift in Sources */,
+				D3DF7E4A206E6478000F43D2 /* OpenViewControllerForTextField.swift in Sources */,
+				D3045F8B21B904EC001C978F /* QRCodeReaderViewController.swift in Sources */,
+				482C0A7B217F0AD7002D740F /* KeyboardTopbar.swift in Sources */,
+				D3045F8D21B904EC001C978F /* ReaderOverlayView.swift in Sources */,
+				D3045F8421B904EC001C978F /* QRCodeReader.swift in Sources */,
+				D3045F8521B904EC001C978F /* QRCodeReaderViewControllerDelegate.swift in Sources */,
+				D3045F8C21B904EC001C978F /* ToggleTorchButton.swift in Sources */,
+				488C575E21802C3400C1A3E4 /* KeyboardOverlay.swift in Sources */,
+				D3045F8621B904EC001C978F /* QRCodeReaderViewContainer.swift in Sources */,
+				D311F1522175BA03007AE593 /* KeyboardViewController.swift in Sources */,
+				D3DF7E4E206E6478000F43D2 /* AppDelegate.swift in Sources */,
+				D3045F7721B7CF04001C978F /* SystemApplicationManager.swift in Sources */,
+				D3045F8A21B904EC001C978F /* SwitchCameraButton.swift in Sources */,
+				482C0A7A217F0AD3002D740F /* Extensions.swift in Sources */,
+				482C0A85217F1D9E002D740F /* ZomatoHomeView.swift in Sources */,
+				D3045F8821B904EC001C978F /* QRCodeReaderView.swift in Sources */,
+				D356188021BF977A0008F8BD /* QRCodeScannerViewController.swift in Sources */,
+				D325C6DC21E5F1B700F6DB46 /* InputViewByNib.swift in Sources */,
+				D356188221BFB7740008F8BD /* ViewController.swift in Sources */,
+				D3045F8721B904EC001C978F /* QRCodeReaderViewControllerBuilder.swift in Sources */,
+				D3045F7821B7CF04001C978F /* SystemApplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DF7E5E206E67C6000F43D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482C0A71217E103F002D740F /* KeyboardTopbar.swift in Sources */,
+				488C575A21802C1A00C1A3E4 /* KeyboardOverlay.swift in Sources */,
+				482C0A86217F1D9E002D740F /* ZomatoHomeView.swift in Sources */,
+				482C0A79217E4513002D740F /* Extensions.swift in Sources */,
+				D325C6DA21E5DD3600F6DB46 /* InputViewByNib.swift in Sources */,
+				D3DF7E5F206E67C6000F43D2 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3DF7E6A206E67F1000F43D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3DF7E5D206E67C6000F43D2 /* BobbleSDKSampleKeyboard */;
+			targetProxy = D3DF7E69206E67F1000F43D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3DF7E40206E6478000F43D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DF7E41206E6478000F43D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D3DF7E42206E6478000F43D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DF7E43206E6478000F43D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3B4D30B206501C000E91CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3B4D30C206501C000E91CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3B4D30E206501C000E91CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DYRJ66PN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BobbleSDKSampleKeyboard",
+				);
+				INFOPLIST_FILE = BobbleSDKSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BobbleSDKSampleApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3B4D30F206501C000E91CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DYRJ66PN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BobbleSDKSampleKeyboard",
+				);
+				INFOPLIST_FILE = BobbleSDKSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BobbleSDKSampleApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3DF7E64206E67C6000F43D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DYRJ66PN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BobbleSDKSampleKeyboard",
+				);
+				GCC_OPTIMIZATION_LEVEL = 1;
+				INFOPLIST_FILE = BobbleSDKSampleKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp.BobbleSDKSampleKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3DF7E65206E67C6000F43D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DYRJ66PN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BobbleSDKSampleKeyboard",
+				);
+				INFOPLIST_FILE = BobbleSDKSampleKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp.BobbleSDKSampleKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3B4D2F6206501C000E91CFF /* Build configuration list for PBXProject "BobbleSDKSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B4D30B206501C000E91CFF /* Debug */,
+				D3B4D30C206501C000E91CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B4D30D206501C000E91CFF /* Build configuration list for PBXNativeTarget "BobbleSDKSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3B4D30E206501C000E91CFF /* Debug */,
+				D3B4D30F206501C000E91CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DF7E63206E67C6000F43D2 /* Build configuration list for PBXNativeTarget "BobbleSDKSampleKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DF7E64206E67C6000F43D2 /* Debug */,
+				D3DF7E65206E67C6000F43D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3B4D2F3206501C000E91CFF /* Project object */;
+}
