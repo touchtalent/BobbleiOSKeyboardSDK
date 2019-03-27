@@ -117,9 +117,10 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
     
     func keyboardTopBarDidTapCameraButton(_ topBar: KeyboardTopbar) {
 //         openQRCodeScanner()
-        let font:[String] = getAllFontName()
-        print(font)
-        changeFont(fontName: font[8])
+//        let font:[String] = getAllFontName()
+//        print(font)
+//        changeFont(fontName: font[8])
+        sendTextToConnectedInput(text: "Hi this is Yash")
     }
 
     func keyboardTopBarDidTapTouchButton(_ topBar: KeyboardTopbar) {
