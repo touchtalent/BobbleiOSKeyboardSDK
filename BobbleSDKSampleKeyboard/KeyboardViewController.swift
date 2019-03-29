@@ -248,7 +248,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
         else
         {
             isKeyboardTheme = !isKeyboardTheme
-            let themeObject:KeyboardThemeModel = KeyboardThemeModel(keyboardBackgroundColor: "#f4b642", keyColor: "#f44d41", suggestionBarColor: "#f441f1", suggestionDividerColor: "#85f441", suggestionTextColor: "#4194f4", keyTextcolor: "843sdf", keyBorderColor: "#85fdsa", keyUnderLinecolor: "#54850s", isThemeDarkType: true)
+            let themeObject:KeyboardThemeModel = KeyboardThemeModel(keyboardBackgroundColor: "#FF191919", keyColor: "#f44d41", suggestionBarColor: "#f441f1", suggestionDividerColor: "#85f441", suggestionTextColor: "#4194f4", keyTextcolor: "843sdf", keyBorderColor: "#85fdsa", keyUnderLinecolor: "#54850s", isThemeDarkType: true)
             loadTheme(themeObject: themeObject)
         }
     }
