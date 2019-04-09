@@ -247,8 +247,24 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
         }
         else
         {
+            let image:UIImage = UIImage(named: "horse.jpg")!
+            
+//            let z:Data = image.pngData()!
+//            UserDefaults.standard.set(z, forKey: "backgroundImage")
+//            
+//            
+//            
+//            
+//            var backgroundImage:UIImage?
+//            if let dataImage:Data = UserDefaults.standard.data(forKey: "backgroundImage")
+//            {
+//                backgroundImage = UIImage.init(data: dataImage)
+//            }
+//            
+            
+            
             isKeyboardTheme = !isKeyboardTheme
-            let themeObject:KeyboardThemeModel = KeyboardThemeModel(keyboardBackgroundColor: "#FF191919", keyColor: "#f44d41", suggestionBarColor: "#f441f1", suggestionDividerColor: "#85f441", suggestionTextColor: "#4194f4", keyTextcolor: "843sdf", keyBorderColor: "#85fdsa", keyUnderLinecolor: "#54850s", isThemeDarkType: true)
+            let themeObject:KeyboardThemeModel = KeyboardThemeModel(keyboardBackgroundColor:"#f441f1", keyColor: "#00FFFFFF", suggestionBarColor: "#f441f1", suggestionDividerColor: "#85f441", suggestionTextColor: "#4194f4", keyTextcolor: "843sdf", keyBorderColor: "#85fdsa", keyUnderLinecolor: "#54850s", isThemeDarkType: true, keyboardBackgroundImage: image)
             loadTheme(themeObject: themeObject)
         }
     }
