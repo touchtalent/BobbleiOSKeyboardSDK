@@ -109,9 +109,10 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
 //        overlay.delegate = self
 //        print(overlay.frame)
 //        showOverlay(view: overlay)
-        let font:[String] = getAllFontName()
-        print(font)
-        changeFont(fontName: font[0])
+//        let font:[String] = getAllFontName()
+//        print(font)
+//        changeFont(fontName: font[0])
+        setKeyboardType(keyboardMode: 0)
         
     }
     
@@ -208,7 +209,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
         
 
         showCustomView(view: customView)
-        setInputTarget(textView: feedbackInputView , keyboardMode:33)
+        setInputTarget(textView: feedbackInputView , keyboardMode:0)
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -221,7 +222,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
     }
     
     @objc func showButtonClicked() {
-        setKeyboardType(keyboardMode: 33)
+        setKeyboardType(keyboardMode: 0)
         showKeyboardView()
     }
     

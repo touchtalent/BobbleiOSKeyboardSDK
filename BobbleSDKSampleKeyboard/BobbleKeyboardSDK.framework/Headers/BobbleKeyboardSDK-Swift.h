@@ -527,6 +527,13 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK14KeyboardLayout")
 @end
 
 
+SWIFT_CLASS("_TtC17BobbleKeyboardSDK21KeyboardNumberPadView")
+@interface KeyboardNumberPadView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK18KeyboardThemeModel")
 @interface KeyboardThemeModel : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1107,6 +1114,13 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK14KeyboardLayout")
 - (void)willHidePopupWithKey:(KeyboardKey * _Nonnull)key;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC17BobbleKeyboardSDK21KeyboardNumberPadView")
+@interface KeyboardNumberPadView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
