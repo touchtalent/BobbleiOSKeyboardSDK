@@ -597,11 +597,13 @@ import BobbleKeyboardSDK
  
 class SampleKeyboardViewController: BobbleKeyboardViewController, WordSuggestionDelegate {
  
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) ->               (wordSuggestion: [String], autocurrect: ObjCBool) {
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String)
+        -> (wordSuggestion: [String], autocurrect: ObjCBool) {
        return (["king","queen","happy"], true)
     }
     
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPredictionfor word: String, previousWord: String) ->           [String] {
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPredictionfor word: String, previousWord: String) 
+        -> [String] {
        return  ["not","seen","yet"]
     }
  }  
