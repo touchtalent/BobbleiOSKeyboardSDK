@@ -16,7 +16,25 @@ import BobbleKeyboardSDK
 import LocalAuthentication
 
 
-class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate{
+class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate , WordSuggestionDelegate{
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) -> (wordSuggestion: [String], autocurrect: ObjCBool) {
+        return (["king","queen","happy"], true)
+    }
+    
+//    func autoCorrectionThreshold(in bobbleKeyboard: BLKeyboardViewController) -> Float? {
+//        return 0.15
+//    }
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) -> [String] {
+        return  ["not","seen","yet"]
+    }
+    
+   
+    
+    
+    
+    
+    
+   
     
    
     
@@ -84,8 +102,9 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setBobbleWordCommitDelegate(delegate: self)
-       // setKeyboardReturnButtonDelegate(delegate: self)
         TouchIdDelegate(delegate: self)
+        setThresholdValueForWordPrediction(value: 0.15)
+        setWordSuggestionDelegate(delegate: self)
         topBar = getTopBar()
         setTopBar(view: topBar)
         
@@ -112,7 +131,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
 //        let font:[String] = getAllFontName()
 //        print(font)
 //        changeFont(fontName: font[0])
-        setKeyboardType(keyboardMode: 0)
+        setKeyboardType(keyboardMode: -1)
         
     }
     
@@ -173,6 +192,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
         zomatoView.frame = CGRect(x: 0, y:0, width: self.view.bounds.width, height:200)
         print(zomatoView.frame)
         showCustomView(view: zomatoView)
+        
     }
     
     func keyboardTopBarDidTapWalletButton(_ topBar: KeyboardTopbar) {
