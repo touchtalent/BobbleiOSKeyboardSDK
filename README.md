@@ -342,8 +342,8 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
 
 #### 9. API setIMESettings(key:NSInteger , value:Bool)
 
-The custom class that extends BobbleKeyboardViewController can call setIMESettings() API to change keyboard's settings programmatically.
-Here are the possible values of key parameter: SETTING_AUTO_CAPITALIZATION, SETTING_SOUND, SETTING_WORD_SUGGESTION, SETTING_AUTO_CORRECTION, SETTING_LOWERCASE_KEY_CAPS.
+The custom class that extends BobbleKeyboardViewController can call changeUserKeyboardSetting() API to change keyboard's settings programmatically.
+Here are the possible values of key parameter: WORD_SUGGESTION,AUTO_CORRECTION, AUTO_CAPITALIZATION, LOWERCASE_KEY_CAPS, KEYPAD_CLICK_SOUND.
 
 **Example :**
 
@@ -369,7 +369,243 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
     }
     
     func topBarButtonClicked(sender: UIButton) {
-        setIMESettings(SETTING_AUTO_CAPITALIZATION, false)
+        changeUserKeyboardSetting(SETTING_AUTO_CAPITALIZATION, false)
     }
 }
 ```
+#### 10. API showTopBar()
+
+The custom class that extends BobbleKeyboardViewController can call showTopBar() API to control the visibility of the top bar.
+
+**Example :**
+     
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        let topBarView:UIView = prepareTopBar()
+        setTopBar(topBarView)
+        showTopBar()
+    }
+    
+    func prepareTopBar() -> UIView {
+        // Place code here to generate custom view that need to be shown in the top bar
+        
+        // Example of a button in top bar that's going to show custom view on click
+        let topBarButton:UIButton = UIButton()
+        topBarButton.addTarget(self, action: #selector(SampleKeyboardViewController.topBarButtonClicked(sender:)), for:     UIControlEvents.touchUpInside)
+    }   
+}
+```     
+     
+#### 11. API hideTopBar()
+
+The custom class that extends BobbleKeyboardViewController can call hideTopBar() API to hide the visibility of the top bar.
+
+**Example :**
+     
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        let topBarView:UIView = prepareTopBar()
+        setTopBar(topBarView)
+        hideTopBar()
+    }
+    
+    func prepareTopBar() -> UIView {
+        // Place code here to generate custom view that need to be shown in the top bar
+        
+        // Example of a button in top bar that's going to show custom view on click
+        let topBarButton:UIButton = UIButton()
+        topBarButton.addTarget(self, action: #selector(SampleKeyboardViewController.topBarButtonClicked(sender:)), for:     UIControlEvents.touchUpInside)
+    }
+}
+```
+
+#### 12. API showOverlay(view: UIView)
+
+The custom class that extends BobbleKeyboardViewController can call showOverlay() API to render the passed along view ontop of the visible keyboard area.This view should allow for transparency so that the keyboard beneath may be visible
+     
+**Example :**
+     
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        let overlay = UIView()
+        overlat.backgroundColor = UIColor.orange
+        overlat.alpha = 0.5
+        showOverlay(view: overlay)
+    }
+}
+```
+
+#### 13. API hideOverlay()
+
+The custom class that extends BobbleKeyboardViewController can call hideOverlay() API to hide the overlay view.
+     
+**Example :**
+
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        hideOverlay()
+    }
+}
+```
+
+#### 14. API loadSuggestionView()
+
+The custom class that extends BobbleKeyboardViewController can call loadSuggestionView() API to load the passed in view onto the suggestion bar.
+     
+**Example :**
+
+```swift
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Build custom view that need to be shown in the tob bar container
+        //width : flexible
+        //height : equalt to Suggestion Bar
+         let suggestionV = UIView(frame: CGRect(x: 45, y: 0, width: , height: ))
+           loadSuggestionView(view: suggestionV)
+    }
+}
+```
+#### 15. API onWordCommit()
+
+Client needs to set this delegate to recieve input word after space and '.'. It also needs to implement required onWordCommit(string: String) method.
+      
+**Example :**     
+
+```swift
+      
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate {
+    
+    func onWordCommit(string: String) {
+         print("callBackString:",string)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //inherit BobbleCallBack delegate
+        //implement onWordCommit func
+        //set delegate for onCommit callBack
+        setBobbleWordCommitDelegate(delegate: self)
+        
+    }
+  }  
+  ```
+      
+#### 16. API loadTheme(themeObject:KeyboardThemeModel?)
+  
+The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard UI.
+
+Here are the parameters supported by KeyboardThemeModel. Please note all color values must be hex values.
+
+1. keyboardBackgroundColor:String(pass the hex color string code)
+2. keyColor:String(pass the hex color string code)
+3. suggestionBarColor:String(pass the hex color string code)
+4. suggestionDividerColor:String(pass the hex color string code) 
+5. suggestionTextColor:String(pass the hex color string code)
+6. keyTextcolor:String(pass the hex color string code)
+7. keyBorderColor:String(pass the hex color string code)
+8. keyUnderLinecolor:String(pass the hex color string code)
+9. isThemeDarkType:Bool (true for dark theme and false for light theme)
+
+To set the default theme, please pass parameter as nil.
+     
+**Example :**
+  
+```swift
+
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //Customized theme
+     
+        let themeObject:KeyboardThemeModel = KeyboardThemeModel(keyboardBackgroundColor: "#f4b642", keyColor: "#f44d41",               suggestionBarColor: "#f441f1", suggestionDividerColor: "#85f441", suggestionTextColor: "#4194f4", keyTextcolor:               "843sdf", keyBorderColor: "#85fdsa", keyUnderLinecolor: "#54850s", isThemeDarkType: true)
+        
+        loadTheme(themeObject: themeObject)
+        
+         //Default theme
+        loadTheme(themeObject: nil)
+   }
+ }  
+ ```
+ #### 17.KeyboardMode
+
+Default 0(Alphabets),1(numeric),2(symbols)
+Email - 3(Alphabets),4(numeric),5(symbols)
+Url - 6(Alphabets),7(numeric),8(symbols)
+continue arrow- 10(Alphabets),11(numeric),12(symbols)
+Arrow + email -13(Alphabets), 14(numeric),15(symbols)
+Arrow + url - 16(Alphabets),17(numeric),18(symbols)
+Blue arrow - 20(Alphabets),21,22(symbols)
+Blue arrow + email -23(Alphabets),24(numeric),25(symbols)
+Blue arrow + Url - 26(Alphabets),27(numeric),28(symbols)
+Search - 30(Alphabets),31(numeric),32(symbols)
+Search + email -33(Alphabets),34(numeric),35(symbols)
+
+ 
+ #### 18. Word Suggestions and Predictions delegates
+ 
+  These delegates allows you to show Third-Party suggestions and predictions. If in case third party couldn't find any suggestions and predictions then default suggestions and predictions will come.
+  
+  To use this feature, first you need to add delegate in viewController
+  **Example :**
+  
+```swift
+
+import UIKit
+import BobbleKeyboardSDK
+ class SampleKeyboardViewController: BobbleKeyboardViewController, WordSuggestionDelegate {
+ 
+ func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) -> (wordSuggestion: [String], autocurrect: ObjCBool)
+    {
+        return (["king","queen","happy"], true)
+    }
+    
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) ->      [String] 
+    {
+        return  ["not","seen","yet"]
+    }
+ 
+ }  
+ ```
+ 
