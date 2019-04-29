@@ -587,7 +587,7 @@ Search + email -33(Alphabets),34(numeric),35(symbols)
  
   These delegates allows you to show Third-Party suggestions and predictions. If in case third party couldn't find any suggestions and predictions then default suggestions and predictions will come.
   
-  To use this feature, first you need to add delegate in viewController
+  To use this feature, first you need to add and set delegate in viewController 
   **Example :**
   
 ```swift
@@ -609,3 +609,23 @@ import BobbleKeyboardSDK
  }  
  ```
  
+ 
+ #### 19. Improve Auto-Correction by Threshold value
+ 
+ There is an Api from which you can change the default value of Threshold value.
+ 
+  **Example :**
+  
+```swift
+
+import UIKit
+import BobbleKeyboardSDK
+ class SampleKeyboardViewController: BobbleKeyboardViewController {
+ 
+ override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setThresholdValueForWordPrediction(value: 0.15)
+        
+    }
+ }
+ ```
