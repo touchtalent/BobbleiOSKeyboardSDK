@@ -624,7 +624,7 @@ import BobbleKeyboardSDK
  
  override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setThresholdValueForWordPrediction(value: 0.15)
+        setThresholdValueForAutoCorrection(value: 0.15)
         
     }
  }
