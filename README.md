@@ -612,7 +612,7 @@ import BobbleKeyboardSDK
  
  #### 19. Improve Auto-Correction by Threshold value
  
- There is an Api from which you can change the default value of Threshold value.
+ There is an Api from which you can change the default value of Threshold.
  
   **Example :**
   
