@@ -583,49 +583,46 @@ Search - 30(Alphabets),31(numeric),32(symbols)
 Search + email -33(Alphabets),34(numeric),35(symbols)
 
  
- #### 18. Word Suggestions and Predictions delegates
+ #### 18. Word Suggestion and Prediction delegates
  
-  These delegates allows you to show Third-Party suggestions and predictions. If in case third party couldn't find any suggestions and predictions then default suggestions and predictions will come.
+These delegates allow to show third-party suggestions and predictions and in turn allow to have your own algorithm implementation. If in case third party couldn't find any suggestions and predictions, default suggestions and predictions will come.
   
-  To use this feature, first you need to add and set delegate in viewController 
+To use this feature, first you need to add and set delegate in viewController 
   **Example :**
   
 ```swift
 
 import UIKit
 import BobbleKeyboardSDK
- class SampleKeyboardViewController: BobbleKeyboardViewController, WordSuggestionDelegate {
  
- func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) -> (wordSuggestion: [String], autocurrect: ObjCBool)
-    {
-        return (["king","queen","happy"], true)
+class SampleKeyboardViewController: BobbleKeyboardViewController, WordSuggestionDelegate {
+ 
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) ->               (wordSuggestion: [String], autocurrect: ObjCBool) {
+       return (["king","queen","happy"], true)
     }
     
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) ->      [String] 
-    {
-        return  ["not","seen","yet"]
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) ->           [String] {
+       return  ["not","seen","yet"]
     }
- 
  }  
  ```
  
- 
  #### 19. Improve Auto-Correction by Threshold value
  
- There is an Api from which you can change the default value of Threshold.
+This API allows client to change auto-correct threshold value at runtime.
  
-  **Example :**
+**Example :**
   
 ```swift
 
 import UIKit
 import BobbleKeyboardSDK
- class SampleKeyboardViewController: BobbleKeyboardViewController {
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
  
- override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setThresholdValueForAutoCorrection(value: 0.15)
-        
     }
  }
  ```
