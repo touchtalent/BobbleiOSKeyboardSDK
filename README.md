@@ -601,7 +601,7 @@ class SampleKeyboardViewController: BobbleKeyboardViewController, WordSuggestion
        return (["king","queen","happy"], true)
     }
     
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) ->           [String] {
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPredictionfor word: String, previousWord: String) ->           [String] {
        return  ["not","seen","yet"]
     }
  }  
