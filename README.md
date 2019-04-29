@@ -587,7 +587,7 @@ Search + email -33(Alphabets),34(numeric),35(symbols)
  
 These delegates allow to show third-party suggestions and predictions and in turn allow to have your own algorithm implementation. If in case third party couldn't find any suggestions and predictions, default suggestions and predictions will come.
   
-To use this feature, first you need to add and set delegate in viewController 
+To use this feature, first you need to add and set delegate in viewController. Use the autocorrect parameter to have the typed word replaced with the first word in the list.
   **Example :**
   
 ```swift
@@ -598,7 +598,7 @@ import BobbleKeyboardSDK
 class SampleKeyboardViewController: BobbleKeyboardViewController, WordSuggestionDelegate {
  
     func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String)
-        -> (wordSuggestion: [String], autocurrect: ObjCBool) {
+        -> (wordSuggestion: [String], autocorrect: ObjCBool) {
        return (["king","queen","happy"], true)
     }
     
