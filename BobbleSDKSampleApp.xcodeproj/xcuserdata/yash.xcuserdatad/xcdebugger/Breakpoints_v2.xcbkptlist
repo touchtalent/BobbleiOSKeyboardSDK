@@ -345,7 +345,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
-            landmarkName = "textViewShouldBeginEditing(textView:)"
+            landmarkName = "textViewDidEndEditing(textView:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -393,7 +393,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "136"
             endingLineNumber = "136"
-            landmarkName = "keyboardTopBarDidTapCareemButton(_:)"
+            landmarkName = "keyboardTopBarDidTapCameraButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -473,8 +473,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "124"
             endingLineNumber = "124"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "3">
+            landmarkName = "keyboardTopBarDidTapCareemButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -489,8 +489,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "122"
             endingLineNumber = "122"
-            landmarkName = "getTopBar()"
-            landmarkType = "7">
+            landmarkName = "KeyboardViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

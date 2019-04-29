@@ -17,13 +17,10 @@ import LocalAuthentication
 
 
 class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate , WordSuggestionDelegate{
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) -> (wordSuggestion: [String], autocurrect: ObjCBool) {
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) -> (wordSuggestion: [String], autocorrect: ObjCBool) {
         return (["king","queen","happy"], true)
     }
     
-//    func autoCorrectionThreshold(in bobbleKeyboard: BLKeyboardViewController) -> Float? {
-//        return 0.15
-//    }
     func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) -> [String] {
         return  ["not","seen","yet"]
     }
@@ -103,7 +100,7 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
         super.viewWillAppear(animated)
         setBobbleWordCommitDelegate(delegate: self)
         TouchIdDelegate(delegate: self)
-        setThresholdValueForWordPrediction(value: 0.15)
+        setThresholdValueForAutoCorrection(value: 0.15)
         setWordSuggestionDelegate(delegate: self)
         topBar = getTopBar()
         setTopBar(view: topBar)
