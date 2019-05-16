@@ -529,9 +529,22 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK14KeyboardLayout")
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK21KeyboardNumberPadView")
 @interface KeyboardNumberPadView : UIView
-- (IBAction)btnAcn:(UIButton * _Nonnull)sender;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key0;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key1;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key2;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key3;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key4;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key5;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key6;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key7;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key8;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key9;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (id _Nullable)awakeAfterUsingCoder:(NSCoder * _Nonnull)aDecoder SWIFT_WARN_UNUSED_RESULT;
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (IBAction)btnAcn:(UIButton * _Nonnull)sender;
 @end
 
 
@@ -1120,9 +1133,22 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK14KeyboardLayout")
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK21KeyboardNumberPadView")
 @interface KeyboardNumberPadView : UIView
-- (IBAction)btnAcn:(UIButton * _Nonnull)sender;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key0;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key1;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key2;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key3;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key4;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key5;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key6;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key7;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key8;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified key9;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (id _Nullable)awakeAfterUsingCoder:(NSCoder * _Nonnull)aDecoder SWIFT_WARN_UNUSED_RESULT;
+- (void)awakeFromNib;
+- (void)layoutSubviews;
+- (IBAction)btnAcn:(UIButton * _Nonnull)sender;
 @end
 
 

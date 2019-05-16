@@ -17,6 +17,14 @@ import LocalAuthentication
 
 
 class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate , WordSuggestionDelegate{
+    func bobbleKeyboard(typedWord: String, ChoosedWord: String) {
+         print("typedWord = \(typedWord) and ChoosedWord = \(ChoosedWord)")
+    }
+    
+    func bobbleKeyboard(prevWord: String, autoCorrectedWord: String, isAutoCorrectWordAccepted: Bool) {
+        print("prevWord = \(prevWord) and autoCorrectedWord = \(autoCorrectedWord) and isAutoCorrectWordAccepted = \(isAutoCorrectWordAccepted)")
+    }
+    
     func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) -> (wordSuggestion: [String], autocorrect: ObjCBool) {
         return (["king","queen","happy"], true)
     }
