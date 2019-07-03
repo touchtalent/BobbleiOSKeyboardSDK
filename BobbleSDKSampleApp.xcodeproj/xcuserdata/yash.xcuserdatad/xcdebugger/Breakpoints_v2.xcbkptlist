@@ -100,13 +100,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.111763"
+            timestampString = "583847082.8998981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "238"
             endingLineNumber = "238"
-            landmarkName = "keyboardTopBarDidTapWalletButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -132,13 +132,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.111874"
+            timestampString = "583847082.900054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
             endingLineNumber = "87"
-            landmarkName = "onWordCommit(string:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -148,13 +148,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.11193"
+            timestampString = "583847082.900106"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "221"
             endingLineNumber = "221"
-            landmarkName = "keyboardTopBarDidTapWalletButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -164,13 +164,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.11198"
+            timestampString = "583847082.900149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "219"
             endingLineNumber = "219"
-            landmarkName = "keyboardTopBarDidTapWalletButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -219,6 +219,98 @@
             endingLineNumber = "16"
             landmarkName = "QRCodeScannerViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleApp.QRCodeScannerViewController.reader.getter : BobbleSDKSampleApp.QRCodeReader"
+                  moduleName = "BobbleSDKSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/v12.0/BobbleiOSKeyboardSDK/BobbleSDKSampleApp/QRCodeScannerViewController.swift"
+                  timestampString = "583847090.259522"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleApp.QRCodeScannerViewController.reader.setter : BobbleSDKSampleApp.QRCodeReader"
+                  moduleName = "BobbleSDKSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/v12.0/BobbleiOSKeyboardSDK/BobbleSDKSampleApp/QRCodeScannerViewController.swift"
+                  timestampString = "583847090.261848"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleApp.QRCodeScannerViewController.reader.modify : BobbleSDKSampleApp.QRCodeReader"
+                  moduleName = "BobbleSDKSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/v12.0/BobbleiOSKeyboardSDK/BobbleSDKSampleApp/QRCodeScannerViewController.swift"
+                  timestampString = "583847090.264303"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleApp.QRCodeScannerViewController.reader.modify : BobbleSDKSampleApp.QRCodeReader with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BobbleSDKSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/v12.0/BobbleiOSKeyboardSDK/BobbleSDKSampleApp/QRCodeScannerViewController.swift"
+                  timestampString = "583847090.2670619"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleApp.QRCodeScannerViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BobbleSDKSampleApp.QRCodeScannerViewController"
+                  moduleName = "BobbleSDKSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/v12.0/BobbleiOSKeyboardSDK/BobbleSDKSampleApp/QRCodeScannerViewController.swift"
+                  timestampString = "583847090.269925"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "199">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleApp.QRCodeScannerViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BobbleSDKSampleApp.QRCodeScannerViewController&gt;"
+                  moduleName = "BobbleSDKSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/v12.0/BobbleiOSKeyboardSDK/BobbleSDKSampleApp/QRCodeScannerViewController.swift"
+                  timestampString = "583847090.2721649"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -267,6 +359,38 @@
             endingLineNumber = "38"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BobbleSDKSampleApp.QRCodeScannerViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "BobbleSDKSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/v12.0/BobbleiOSKeyboardSDK/BobbleSDKSampleApp/QRCodeScannerViewController.swift"
+                  timestampString = "583847090.293097"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;BobbleSDKSampleApp.QRCodeReaderResult&gt;) -&gt; () in BobbleSDKSampleApp.QRCodeScannerViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "BobbleSDKSampleApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yash/Desktop/v12.0/BobbleiOSKeyboardSDK/BobbleSDKSampleApp/QRCodeScannerViewController.swift"
+                  timestampString = "583847090.295796"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -324,13 +448,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112198"
+            timestampString = "583847082.900281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "170"
             endingLineNumber = "170"
-            landmarkName = "keyboardTopBarDidTapTouchButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -340,13 +464,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112265"
+            timestampString = "583847082.900326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
-            landmarkName = "textViewDidEndEditing(textView:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -356,13 +480,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112308"
+            timestampString = "583847082.900369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
             endingLineNumber = "61"
-            landmarkName = "textViewShouldBeginEditing(textView:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -372,13 +496,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.11235"
+            timestampString = "583847082.900412"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "touchIdAction(isSuccess:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -388,13 +512,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112388"
+            timestampString = "583847082.900456"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "144"
             endingLineNumber = "144"
-            landmarkName = "keyboardTopBarDidTapCameraButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -404,13 +528,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112427"
+            timestampString = "583847082.900499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "136"
             endingLineNumber = "136"
-            landmarkName = "keyboardTopBarDidTapCareemButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -420,13 +544,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112466"
+            timestampString = "583847082.900546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -436,13 +560,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112506"
+            timestampString = "583847082.9005899"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "textViewShouldBeginEditing(textView:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -452,13 +576,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112546"
+            timestampString = "583847082.900633"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "textViewShouldReturn(textView:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -468,13 +592,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112586"
+            timestampString = "583847082.900676"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
             endingLineNumber = "132"
-            landmarkName = "keyboardTopBarDidTapCareemButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -484,13 +608,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112625"
+            timestampString = "583847082.900718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "130"
             endingLineNumber = "130"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "21">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -500,13 +624,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112664"
+            timestampString = "583847082.900759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "279"
             endingLineNumber = "279"
-            landmarkName = "keyboardTopBarDidTapPayButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -516,13 +640,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112702"
+            timestampString = "583847082.9008009"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "262"
             endingLineNumber = "262"
-            landmarkName = "keyboardTopBarDidTapBotButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -532,13 +656,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.112741"
+            timestampString = "583847082.900842"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "236"
             endingLineNumber = "236"
-            landmarkName = "keyboardTopBarDidTapWalletButton(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -580,13 +704,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "579702744.1128891"
+            timestampString = "583847082.900921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
             endingLineNumber = "29"
-            landmarkName = "bobbleKeyboard(_:nextWordsfor:previousWord:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
