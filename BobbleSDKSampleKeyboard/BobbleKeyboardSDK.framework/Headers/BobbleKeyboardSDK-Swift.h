@@ -690,6 +690,11 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK10ShiftShape")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+typedef SWIFT_ENUM(NSInteger, Source, closed) {
+  SourceBobble = 0,
+  SourceGCS = 1,
+};
+
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK17TextInputDelegate_")
 @protocol TextInputDelegate
@@ -723,6 +728,12 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK13TextInputView")
 @end
 
 
+
+
+SWIFT_CLASS("_TtC17BobbleKeyboardSDK14WordSuggestion")
+@interface WordSuggestion : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK15touchIdDelegate_")

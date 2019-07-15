@@ -17,20 +17,24 @@ import LocalAuthentication
 
 
 class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate , WordSuggestionDelegate{
-    func bobbleKeyboard(typedWord: String, ChoosedWord: String) {
-         print("typedWord = \(typedWord) and ChoosedWord = \(ChoosedWord)")
+    func bobbleKeyboard(typedWord: String, ChoosedWord: String, source:Source, wordsArray:[String]) {
+        print("typedWord = \(typedWord) and ChoosedWord = \(ChoosedWord) and source = \(source) and wordsArray = \(wordsArray)")
     }
     
-    func bobbleKeyboard(prevWord: String, autoCorrectedWord: String, isAutoCorrectWordAccepted: Bool) {
-        print("prevWord = \(prevWord) and autoCorrectedWord = \(autoCorrectedWord) and isAutoCorrectWordAccepted = \(isAutoCorrectWordAccepted)")
+    func bobbleKeyboard(prevWord: String, autoCorrectedWord: String, isAutoCorrectWordAccepted: Bool, source:Source, wordsArray:[String]) {
+        print("prevWord = \(prevWord) and autoCorrectedWord = \(autoCorrectedWord) and isAutoCorrectWordAccepted = \(isAutoCorrectWordAccepted) and source = \(source) and wordsArray = \(wordsArray)")
     }
     
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) -> (wordSuggestion: [String], autocorrect: ObjCBool) {
-        return (["king","queen","happy"], true)
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String) -> WordSuggestion {
+        let wordSuggestionStruct = WordSuggestion()
+        wordSuggestionStruct.arrWordSuggestion = []
+        wordSuggestionStruct.autocorrect = true
+        
+        return wordSuggestionStruct
     }
     
     func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) -> [String] {
-        return  ["not","seen","yet"]
+        return  []
     }
     
    
