@@ -383,9 +383,18 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK20BobbleCallBackString")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+typedef SWIFT_ENUM(NSInteger, BobbleIMESettings, closed) {
+  BobbleIMESettingsAUTO_CAPITALIZATION = 0,
+  BobbleIMESettingsAUTO_CORRECTION = 1,
+  BobbleIMESettingsWORD_SUGGESTION = 2,
+  BobbleIMESettingsKEYPAD_CLICK_SOUND = 3,
+  BobbleIMESettingsLOWERCASE_KEY_CAPS = 4,
+};
+
 @class TextInputView;
 @protocol BobbleWordCommitDelegate;
 @protocol touchIdDelegate;
+@protocol WordSuggestionDelegate;
 @class KeyboardThemeModel;
 
 /// Custom keyboard view controller
@@ -427,6 +436,10 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 ///   </li>
 /// </ul>
 - (void)setKeyboardLanguageWithValue:(NSString * _Nonnull)value;
+/// The custom class that extends BobbleKeyboardViewController can call setIMESettings() API to change keyboard’s settings programmatically. Here are the possible values of key parameter: AUTO_CAPITALIZATION, KEYPAD_CLICK_SOUND, WORD_SUGGESTION, AUTO_CORRECTION, LOWERCASE_KEY_CAPS.
+/// precondition:
+/// <code>value</code> and ‘key’ should not be nil.
+- (void)setIMESettingsWithKey:(enum BobbleIMESettings)key value:(BOOL)value;
 /// The custom class that extends BobbleKeyboardViewController can call showTopBar() API to control the visibility of the top bar.
 /// precondition:
 /// <code>Top bar</code> should be added.
@@ -459,6 +472,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 - (void)setBobbleWordCommitDelegateWithDelegate:(id <BobbleWordCommitDelegate> _Nonnull)delegate;
 - (void)TouchIdDelegateWithDelegate:(id <touchIdDelegate> _Nonnull)delegate;
 - (void)setThresholdValueForAutoCorrectionWithValue:(double)value;
+- (void)setWordSuggestionDelegateWithDelegate:(id <WordSuggestionDelegate> _Nonnull)delegate;
 /// The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard theme
 /// for Custom theme
 /// parameters in KeyboardThemeModel -
@@ -732,7 +746,19 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK13TextInputView")
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK14WordSuggestion")
 @interface WordSuggestion : NSObject
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull arrWordSuggestion;
+@property (nonatomic) BOOL autocorrect;
+@property (nonatomic) enum Source source;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK22WordSuggestionDelegate_")
+@protocol WordSuggestionDelegate
+- (WordSuggestion * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard nextWordsfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord SWIFT_WARN_UNUSED_RESULT;
+- (void)bobbleKeyboardWithTypedWord:(NSString * _Nonnull)typedWord ChoosedWord:(NSString * _Nonnull)ChoosedWord source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
+- (void)bobbleKeyboardWithPrevWord:(NSString * _Nonnull)prevWord autoCorrectedWord:(NSString * _Nonnull)autoCorrectedWord isAutoCorrectWordAccepted:(BOOL)isAutoCorrectWordAccepted source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
+- (NSArray<NSString *> * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard wordPridictionfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
