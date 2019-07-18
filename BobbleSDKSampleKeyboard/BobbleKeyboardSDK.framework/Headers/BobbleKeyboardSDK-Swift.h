@@ -259,6 +259,13 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK27BLSuggestionsBannerDelegate_")
 @end
 
 
+SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK27numberPadKeyPressedDelegate_")
+@protocol numberPadKeyPressedDelegate
+- (void)sendTextToInputStreamWithStr:(NSString * _Nonnull)str;
+- (void)backButtonPressed;
+@end
+
+
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK23DefaultSettingsDelegate_")
 @protocol DefaultSettingsDelegate
 - (void)wordSuggestionsOn;
@@ -268,13 +275,17 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK23DefaultSettingsDelegate_")
 
 @class NSBundle;
 @class NSNotification;
+@class TextInputView;
 @class UITraitCollection;
 @protocol UIViewControllerTransitionCoordinator;
 @class KeyboardKey;
 @protocol UITextInput;
+@class ExtraView;
+@protocol BobbleWordCommitDelegate;
+@protocol touchIdDelegate;
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
-@interface KeyboardViewController : UIInputViewController <DefaultSettingsDelegate>
+@interface KeyboardViewController : UIInputViewController <DefaultSettingsDelegate, numberPadKeyPressedDelegate>
 - (void)returnClicked;
 - (void)launchEmojiKeyboard;
 - (void)wordSuggestionsOn;
@@ -287,6 +298,11 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
 - (void)viewDidLayoutSubviews;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)clickOnNumberOfTopRowWithSender:(UIButton * _Nonnull)sender;
+- (void)openCustomWithViewForCustom:(UIView * _Nonnull)viewForCustom;
+- (void)sendTextToInputStreamWithStr:(NSString * _Nonnull)str;
+- (void)backButtonPressed;
+- (void)openKeyboardWithTextView:(TextInputView * _Nonnull)textView setMode:(NSInteger)setMode;
+- (void)dismissOtherViewsIfOpen;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration;
@@ -316,11 +332,19 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
 - (void)advanceTappedWithSender:(id _Nonnull)sender;
 - (void)toggleSettingsWithHide:(BOOL)hide;
 - (void)playKeySound;
+- (ExtraView * _Nullable)createBanner SWIFT_WARN_UNUSED_RESULT;
+- (void)setBannerWithView:(UIView * _Nonnull)view;
+- (ExtraView * _Nullable)createSettings SWIFT_WARN_UNUSED_RESULT;
+- (void)setCallBackDelegateWithDelegate:(id <BobbleWordCommitDelegate> _Nonnull)delegate;
+- (void)setTouchIdDelegateWithDelegate:(id <touchIdDelegate> _Nonnull)delegate;
+- (void)openViewForTextFiled;
 @end
 
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK24BLKeyboardViewController")
 @interface BLKeyboardViewController : KeyboardViewController <BLSuggestionsBannerDelegate>
+- (void)setCallBackDelegateWithDelegate:(id <BobbleWordCommitDelegate> _Nonnull)delegate;
+- (void)setTouchIdDelegateWithDelegate:(id <touchIdDelegate> _Nonnull)delegate;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLayoutSubviews;
@@ -335,6 +359,9 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK24BLKeyboardViewController")
 - (void)backspaceDownWithSender:(id _Nonnull)sender;
 - (void)backspaceRepeatCallback;
 - (void)returnClicked;
+- (ExtraView * _Nullable)createBanner SWIFT_WARN_UNUSED_RESULT;
+- (void)setBannerWithView:(UIView * _Nonnull)viewSuggestion;
+- (void)dismissOtherViewsIfOpen;
 - (void)toggleSettingsView:(BOOL)open;
 - (void)openKeyboardView;
 - (void)wordTapped:(NSString * _Nonnull)word tag:(NSInteger)tag;
@@ -391,9 +418,6 @@ typedef SWIFT_ENUM(NSInteger, BobbleIMESettings, closed) {
   BobbleIMESettingsLOWERCASE_KEY_CAPS = 4,
 };
 
-@class TextInputView;
-@protocol BobbleWordCommitDelegate;
-@protocol touchIdDelegate;
 @protocol WordSuggestionDelegate;
 @class KeyboardThemeModel;
 
@@ -667,9 +691,11 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK35KeyboardReturnButtonClickedDelegate_")
 - (void)textViewShouldReturnWithTextView:(TextInputView * _Nonnull)textView;
 @end
 
+@class UIImage;
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK18KeyboardThemeModel")
 @interface KeyboardThemeModel : NSObject
+- (nonnull instancetype)initWithKeyboardBackgroundColor:(NSString * _Nonnull)keyboardBackgroundColor keyColor:(NSString * _Nonnull)keyColor suggestionBarColor:(NSString * _Nonnull)suggestionBarColor suggestionDividerColor:(NSString * _Nonnull)suggestionDividerColor suggestionTextColor:(NSString * _Nonnull)suggestionTextColor keyTextcolor:(NSString * _Nonnull)keyTextcolor keyBorderColor:(NSString * _Nonnull)keyBorderColor keyUnderLinecolor:(NSString * _Nonnull)keyUnderLinecolor isThemeDarkType:(BOOL)isThemeDarkType keyboardBackgroundImage:(UIImage * _Nonnull)keyboardBackgroundImage OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -760,6 +786,7 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK22WordSuggestionDelegate_")
 - (void)bobbleKeyboardWithPrevWord:(NSString * _Nonnull)prevWord autoCorrectedWord:(NSString * _Nonnull)autoCorrectedWord isAutoCorrectWordAccepted:(BOOL)isAutoCorrectWordAccepted source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
 - (NSArray<NSString *> * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard wordPridictionfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK15touchIdDelegate_")

@@ -18,7 +18,7 @@
 #import "BLWordSuggestions.h"
 
 //! Project version number for BobbleKeyboardSDK.
-FOUNDATION_EXPORT double BobbleKeyboardSDKVersionNumber;
+ FOUNDATION_EXPORT double BobbleKeyboardSDKVersionNumber;
 
 //! Project version string for BobbleKeyboardSDK.
 FOUNDATION_EXPORT const unsigned char BobbleKeyboardSDKVersionString[];
