@@ -29,14 +29,14 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
     
     func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String, pressedCharacter: String) -> WordSuggestion {
         let wordSuggestionStruct = WordSuggestion()
-        wordSuggestionStruct.arrWordSuggestion = []
+        wordSuggestionStruct.arrWordSuggestion = ["sdjsh"]
         wordSuggestionStruct.autocorrect = true
         
         return wordSuggestionStruct
     }
     
     func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) -> [String] {
-        return  []
+        return  ["sdm"]
     }
     
    
