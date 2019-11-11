@@ -17,6 +17,10 @@ import LocalAuthentication
 
 
 class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate , WordSuggestionDelegate{
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String, source: predictionSource, pressedCharacter: String) -> [String] {
+         return  ["sdm"]
+    }
+    
    
     
     func bobbleKeyboard(typedWord: String, ChoosedWord: String, source:Source, wordsArray:[String]) {
@@ -35,9 +39,7 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
         return wordSuggestionStruct
     }
     
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String) -> [String] {
-        return  ["sdm"]
-    }
+    
     
    
     

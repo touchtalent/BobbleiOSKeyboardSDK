@@ -137,23 +137,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AEABCDF7-50B0-47A9-ABDC-119AE2AF7C32"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "584884355.2629631"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "onWordCommit(string:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C9162845-181F-45BB-95C5-5B767EC71F08"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -368,41 +351,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "94BBD01A-C982-4C27-8107-29043DB7D05F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "584884355.2647409"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
             landmarkName = "textViewShouldBeginEditing(textView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C4087A29-69E2-4DBD-BDCA-97BCEF5EA90D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "584884355.264999"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "touchIdAction(isSuccess:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -419,8 +368,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "148"
             endingLineNumber = "148"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "21">
+            landmarkName = "keyboardTopBarDidTapCareemButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -443,57 +392,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A65B8381-4E9F-40C3-8D2C-1A482BFDAC8A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "584884355.265864"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C46C98A3-1F0B-48F7-A1B1-5E956F6FA3D9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "584884355.26616"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "textViewShouldBeginEditing(textView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5D6204CB-5D72-4641-A43A-C3AFA2CBCFE5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "584884355.266427"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "textViewShouldReturn(textView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "FC959E61-1A60-4E25-B71B-46FA8DB57BDF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -504,8 +402,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "136"
             endingLineNumber = "136"
-            landmarkName = "KeyboardViewController"
-            landmarkType = "21">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -521,8 +419,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
             endingLineNumber = "134"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "KeyboardViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -613,16 +511,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "80D295E2-731E-45CE-98C6-35F6BB6A7D65"
+            uuid = "A38362EB-ABF2-452E-B088-42CE4B4A3FE1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "bobbleKeyboard(_:nextWordsfor:previousWord:pressedCharacter:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "bobbleKeyboard(_:wordPridictionfor:previousWord:source:pressedCharacter:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
