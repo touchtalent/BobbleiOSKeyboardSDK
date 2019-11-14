@@ -416,6 +416,7 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK17TextInputDelegate_")
 @class UIColor;
 @class UIFont;
 @class UIButton;
+@class UILabel;
 @class NSMutableString;
 @class UITouch;
 @class UIEvent;
@@ -426,12 +427,14 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK13TextInputView")
 @property (nonatomic, strong) UIFont * _Null_unspecified textFont;
 @property (nonatomic, strong) UIButton * _Nullable blinkButton;
 @property (nonatomic) BOOL isPasswordProtacted;
+@property (nonatomic, readonly, strong) UILabel * _Nonnull textLabel;
 @property (nonatomic, weak) id <TextInputDelegate> _Nullable textDelegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)setPlaceHolderWithStr:(NSMutableString * _Nonnull)str placeholderColor:(UIColor * _Nonnull)placeholderColor placeHolderFont:(UIFont * _Nonnull)placeHolderFont;
 @property (nonatomic, readonly) BOOL hasText;
 - (void)insertText:(NSString * _Nonnull)text;
+- (void)deleteAllcharacters;
 - (void)deleteBackward;
 - (NSString * _Nonnull)getText SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) BOOL canBecomeFirstResponder;
