@@ -157,48 +157,58 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
     }
 
     func keyboardTopBarDidTapTouchButton(_ topBar: KeyboardTopbar) {
-        //touchIdClicked()
-        
-        let InputViewBy = InputViewByNib.loadView(fromNib: "InputViewByNib", withType: InputViewByNib.self)
-        InputViewBy.frame = CGRect(x: 0, y:0, width: self.view.bounds.width, height:200)
-        
-        let txtInput:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText.frame.size.width
-            , height: InputViewBy.viewForText.frame.size.height ))
-        InputViewBy.viewForText.addSubview(txtInput)
-        txtInput.setPlaceHolder(str: " set place holder", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
-        txtInput.backgroundColor = UIColor.red
-        txtInput.textFont =  UIFont(name: "Helvetica", size: 20)!
-        txtInput.textColor = UIColor.black
-        txtInput.textDelegate = self
-        
-        
-        
-        let txtInput1:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText1.frame.size.width
-            , height: InputViewBy.viewForText1.frame.size.height))
-        InputViewBy.viewForText1.addSubview(txtInput1)
-        txtInput1.setPlaceHolder(str: " set place holder 1", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
-        txtInput1.backgroundColor = UIColor.red
-        txtInput1.textFont =  UIFont(name: "Helvetica", size: 20)!
-        txtInput1.textColor = UIColor.black
-        txtInput1.textDelegate = self
-        
-        
-        
-        
-        
-        let txtInput2:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText2.frame.size.width
-            , height: InputViewBy.viewForText2.frame.size.height))
-        InputViewBy.viewForText2.addSubview(txtInput2)
-        txtInput2.setPlaceHolder(str: " set place holder 2", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
-        txtInput2.backgroundColor = UIColor.red
-        txtInput2.textColor = UIColor.black
-        txtInput2.textFont =  UIFont(name: "Helvetica", size: 20)!
-        txtInput2.textDelegate = self
-        
-        showCustomView(view: InputViewBy)
-        
-    }
+            //touchIdClicked()
+            
+            let InputViewBy = InputViewByNib.loadView(fromNib: "InputViewByNib", withType: InputViewByNib.self)
+            InputViewBy.frame = CGRect(x: 0, y:0, width: self.view.bounds.width, height:200)
+            
+            let txtInput:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText.frame.size.width
+                , height: InputViewBy.viewForText.frame.size.height ))
+            InputViewBy.viewForText.addSubview(txtInput)
+            txtInput.setPlaceHolder(str: " set place holder", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
+            txtInput.backgroundColor = UIColor.red
+            txtInput.textFont =  UIFont(name: "Helvetica", size: 20)!
+            txtInput.textColor = UIColor.black
+            txtInput.textDelegate = self
+            
+            InputViewBy.btnDelete.addTarget(self, action: #selector(KeyboardViewController.deleteAllChar), for: .touchUpInside)
+            
+    //        let button = UIButton(frame: CGRect(x: InputViewBy.btnDelete.o, y: 10, width: 60, height: 60))
+    //               button.setTitle("Show", for: .normal)
+    //               button.addTarget(self, action: #selector(KeyboardViewController.deleteAllChar), for: .touchUpInside)
+    //               customView.addSubview(button)
+            
+            let txtInput1:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText1.frame.size.width
+                , height: InputViewBy.viewForText1.frame.size.height))
+            InputViewBy.viewForText1.addSubview(txtInput1)
+            txtInput1.setPlaceHolder(str: " set place holder 1", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
+            txtInput1.backgroundColor = UIColor.red
+            txtInput1.textFont =  UIFont(name: "Helvetica", size: 20)!
+            txtInput1.textColor = UIColor.black
+            txtInput1.textDelegate = self
+            
+            
+            
+            
+            
+            let txtInput2:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText2.frame.size.width
+                , height: InputViewBy.viewForText2.frame.size.height))
+            InputViewBy.viewForText2.addSubview(txtInput2)
+            txtInput2.setPlaceHolder(str: " set place holder 2", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
+            txtInput2.backgroundColor = UIColor.red
+            txtInput2.textColor = UIColor.black
+            txtInput2.textFont =  UIFont(name: "Helvetica", size: 20)!
+            txtInput2.textDelegate = self
+            
+            showCustomView(view: InputViewBy)
+            
+        }
     
+    @objc func deleteAllChar()
+    {
+        self.currentInputTextView?.deleteAllcharacters()
+        currentInputTextView = nil
+    }
     
     func keyboardTopBarDidTapZomatoButton(_ topBar: KeyboardTopbar) {
         let zomatoView = ZomatoHomeView.loadView(fromNib: "ZomatoHomeView", withType: ZomatoHomeView.self)

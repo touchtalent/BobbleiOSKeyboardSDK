@@ -1,0 +1,15 @@
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked|alphabetShiftLockShifted">
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="q" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="w" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="e" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="r" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="t" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="y" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="u" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="i" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="o" latin:moreKeys="" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="p" latin:moreKeys="" /><case>
+</switch>
+</merge>

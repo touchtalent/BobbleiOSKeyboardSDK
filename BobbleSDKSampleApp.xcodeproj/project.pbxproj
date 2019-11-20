@@ -34,15 +34,14 @@
 		D3045F8B21B904EC001C978F /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F8121B904EC001C978F /* QRCodeReaderViewController.swift */; };
 		D3045F8C21B904EC001C978F /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F8221B904EC001C978F /* ToggleTorchButton.swift */; };
 		D3045F8D21B904EC001C978F /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F8321B904EC001C978F /* ReaderOverlayView.swift */; };
+		D30C737A2385666100C62E20 /* InputViewByNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30C73792385666100C62E20 /* InputViewByNib.xib */; };
 		D30CC311225C7158005D5A40 /* horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D30CC310225C7157005D5A40 /* horse.jpg */; };
 		D30CC312225C7158005D5A40 /* horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D30CC310225C7157005D5A40 /* horse.jpg */; };
 		D311F14C2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; };
 		D311F14D2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; };
 		D311F1522175BA03007AE593 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */; };
 		D311F1542175BAA2007AE593 /* BobbleKeyboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D325C6D821E5DA0D00F6DB46 /* InputViewByNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = D325C6D721E5DA0D00F6DB46 /* InputViewByNib.xib */; };
 		D325C6DA21E5DD3600F6DB46 /* InputViewByNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */; };
-		D325C6DB21E5F1A000F6DB46 /* InputViewByNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = D325C6D721E5DA0D00F6DB46 /* InputViewByNib.xib */; };
 		D325C6DC21E5F1B700F6DB46 /* InputViewByNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */; };
 		D356188021BF977A0008F8BD /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356187F21BF977A0008F8BD /* QRCodeScannerViewController.swift */; };
 		D356188221BFB7740008F8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356188121BFB7740008F8BD /* ViewController.swift */; };
@@ -119,9 +118,9 @@
 		D3045F8121B904EC001C978F /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
 		D3045F8221B904EC001C978F /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
 		D3045F8321B904EC001C978F /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		D30C73792385666100C62E20 /* InputViewByNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewByNib.xib; sourceTree = "<group>"; };
 		D30CC310225C7157005D5A40 /* horse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horse.jpg; sourceTree = "<group>"; };
 		D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BobbleKeyboardSDK.framework; sourceTree = "<group>"; };
-		D325C6D721E5DA0D00F6DB46 /* InputViewByNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewByNib.xib; sourceTree = "<group>"; };
 		D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewByNib.swift; sourceTree = "<group>"; };
 		D356187F21BF977A0008F8BD /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
 		D356188121BFB7740008F8BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,7 +229,7 @@
 		D325C6D621E5D96400F6DB46 /* InputView */ = {
 			isa = PBXGroup;
 			children = (
-				D325C6D721E5DA0D00F6DB46 /* InputViewByNib.xib */,
+				D30C73792385666100C62E20 /* InputViewByNib.xib */,
 				D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */,
 			);
 			path = InputView;
@@ -398,7 +397,6 @@
 				D30CC311225C7158005D5A40 /* horse.jpg in Resources */,
 				D3DF7E4B206E6478000F43D2 /* Assets.xcassets in Resources */,
 				D3DF7E4D206E6478000F43D2 /* Main.storyboard in Resources */,
-				D325C6DB21E5F1A000F6DB46 /* InputViewByNib.xib in Resources */,
 				D3DF7E4C206E6478000F43D2 /* LaunchScreen.storyboard in Resources */,
 				482C0A82217F1A34002D740F /* ZomatoHomeView.xib in Resources */,
 				488C575C21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */,
@@ -411,7 +409,7 @@
 			files = (
 				482C0A76217E3915002D740F /* Media.xcassets in Resources */,
 				D30CC312225C7158005D5A40 /* horse.jpg in Resources */,
-				D325C6D821E5DA0D00F6DB46 /* InputViewByNib.xib in Resources */,
+				D30C737A2385666100C62E20 /* InputViewByNib.xib in Resources */,
 				482C0A74217E1059002D740F /* KeyboardTopbar.xib in Resources */,
 				482C0A83217F1A34002D740F /* ZomatoHomeView.xib in Resources */,
 				488C575D21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */,

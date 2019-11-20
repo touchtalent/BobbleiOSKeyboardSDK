@@ -1,0 +1,17 @@
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked|alphabetShiftLockShifted">
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="១" latin:moreKeys="៱" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="២" latin:moreKeys="៲" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="៣" latin:moreKeys="៳" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="៤" latin:moreKeys="៴" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="៥" latin:moreKeys="៵" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="៦" latin:moreKeys="៶" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="៧" latin:moreKeys="៷" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="៨" latin:moreKeys="៸" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="៩" latin:moreKeys="៹" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="០" latin:moreKeys="៰" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="ឥ" latin:moreKeys="ឦ" />
+<Key latin:keyLabelFlags="fontNormal" latin:keySpec="ឲ" latin:moreKeys="ឱ" /><case>
+</switch>
+</merge>

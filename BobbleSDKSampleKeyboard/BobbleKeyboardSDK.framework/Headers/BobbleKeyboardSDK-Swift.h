@@ -202,7 +202,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class NSXMLParser;
 @class NSBundle;
 @class NSCoder;
 @class UITraitCollection;
@@ -213,9 +212,6 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
 @interface KeyboardViewController : UIInputViewController <NSXMLParserDelegate>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)parser:(NSXMLParser * _Nonnull)parser didStartElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName attributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributeDict;
-- (void)parser:(NSXMLParser * _Nonnull)parser didEndElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName;
-- (void)parser:(NSXMLParser * _Nonnull)parser foundCharacters:(NSString * _Nonnull)string;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLayoutSubviews;
@@ -418,8 +414,6 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK17TextInputDelegate_")
 @class UIButton;
 @class UILabel;
 @class NSMutableString;
-@class UITouch;
-@class UIEvent;
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK13TextInputView")
 @interface TextInputView : UIScrollView <UIKeyInput>
@@ -438,7 +432,6 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK13TextInputView")
 - (void)deleteBackward;
 - (NSString * _Nonnull)getText SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) BOOL canBecomeFirstResponder;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)hideBlinkView;
 @end
 

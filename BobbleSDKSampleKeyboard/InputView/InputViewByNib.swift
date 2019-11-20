@@ -11,7 +11,8 @@ import BobbleKeyboardSDK
 
 class InputViewByNib: UIView  {
     
-  
+    @IBOutlet weak var btnDelete: UIButton!
+    
     @IBOutlet weak var viewForText: UIView!
     @IBOutlet weak var viewForText1: UIView!
     @IBOutlet weak var viewForText2: UIView!

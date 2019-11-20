@@ -324,23 +324,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3CDFAE0F-60DD-421F-8D3D-39DDEA48BF3F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
-            timestampString = "584884355.264122"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
-            landmarkName = "keyboardTopBarDidTapTouchButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "107889EE-D6BD-4363-8E1B-7EEDB9A96C96"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -453,8 +436,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "266"
             endingLineNumber = "266"
-            landmarkName = "keyboardTopBarDidTapBotButton(_:)"
-            landmarkType = "7">
+            landmarkName = "KeyboardViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -511,16 +494,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A38362EB-ABF2-452E-B088-42CE4B4A3FE1"
+            uuid = "0D818EFF-F97B-4D67-9DC5-96F38DF44DFF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "bobbleKeyboard(_:wordPridictionfor:previousWord:source:pressedCharacter:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "bobbleKeyboard(_:nextWordsfor:previousWord:pressedCharacter:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
