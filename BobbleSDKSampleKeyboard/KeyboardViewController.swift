@@ -207,7 +207,6 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
     @objc func deleteAllChar()
     {
         self.currentInputTextView?.deleteAllcharacters()
-        currentInputTextView = nil
     }
     
     func keyboardTopBarDidTapZomatoButton(_ topBar: KeyboardTopbar) {

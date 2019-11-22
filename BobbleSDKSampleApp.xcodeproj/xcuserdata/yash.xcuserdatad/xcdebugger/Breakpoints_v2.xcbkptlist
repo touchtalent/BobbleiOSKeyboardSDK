@@ -419,7 +419,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "283"
             endingLineNumber = "283"
-            landmarkName = "keyboardTopBarDidTapPayButton(_:)"
+            landmarkName = "keyboardTopBarDidTapBotButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
