@@ -450,10 +450,10 @@ enum predictionSource : NSInteger;
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK22WordSuggestionDelegate_")
 @protocol WordSuggestionDelegate
-- (WordSuggestion * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard nextWordsfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord pressedCharacter:(NSString * _Nonnull)pressedCharacter isTextBeforeInput:(BOOL)isTextBeforeInput textBeforeInput:(NSString * _Nonnull)textBeforeInput SWIFT_WARN_UNUSED_RESULT;
+- (WordSuggestion * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard nextWordsfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord pressedCharacter:(NSString * _Nonnull)pressedCharacter SWIFT_WARN_UNUSED_RESULT;
 - (void)bobbleKeyboardWithTypedWord:(NSString * _Nonnull)typedWord ChoosedWord:(NSString * _Nonnull)ChoosedWord source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
 - (void)bobbleKeyboardWithPrevWord:(NSString * _Nonnull)prevWord autoCorrectedWord:(NSString * _Nonnull)autoCorrectedWord isAutoCorrectWordAccepted:(BOOL)isAutoCorrectWordAccepted source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
-- (NSArray<NSString *> * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard wordPridictionfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord source:(enum predictionSource)source pressedCharacter:(NSString * _Nonnull)pressedCharacter isTextBeforeInput:(BOOL)isTextBeforeInput textBeforeInput:(NSString * _Nonnull)textBeforeInput SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<NSString *> * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard wordPridictionfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord source:(enum predictionSource)source pressedCharacter:(NSString * _Nonnull)pressedCharacter SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, predictionSource, closed) {
