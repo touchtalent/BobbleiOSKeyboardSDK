@@ -21,26 +21,25 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
    
    
     
-    func bobbleKeyboard(typedWord: String, ChoosedWord: String, source:Source, wordsArray:[String]) {
-        print("typedWord = \(typedWord) and ChoosedWord = \(ChoosedWord) and source = \(source) and wordsArray = \(wordsArray)")
-    }
-    
-    func bobbleKeyboard(prevWord: String, autoCorrectedWord: String, isAutoCorrectWordAccepted: Bool, source:Source, wordsArray:[String]) {
-        print("prevWord = \(prevWord) and autoCorrectedWord = \(autoCorrectedWord) and isAutoCorrectWordAccepted = \(isAutoCorrectWordAccepted) and source = \(source) and wordsArray = \(wordsArray)")
-    }
-    
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String, pressedCharacter: String) -> WordSuggestion {
-        let wordSuggestionStruct = WordSuggestion()
-        wordSuggestionStruct.arrWordSuggestion = []
-        wordSuggestionStruct.autocorrect = true
+     func bobbleKeyboard(typedWord: String, ChoosedWord: String, source:Source, wordsArray:[String]) {
+           print("typedWord = \(typedWord) and ChoosedWord = \(ChoosedWord) and source = \(source) and wordsArray = \(wordsArray)")
+       }
+       
+       func bobbleKeyboard(prevWord: String, autoCorrectedWord: String, isAutoCorrectWordAccepted: Bool, source:Source, wordsArray:[String]) {
+           print("prevWord = \(prevWord) and autoCorrectedWord = \(autoCorrectedWord) and isAutoCorrectWordAccepted = \(isAutoCorrectWordAccepted) and source = \(source) and wordsArray = \(wordsArray)")
+       }
+       
+       func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String, pressedCharacter: String, isTextBeforeInput: Bool, textBeforeInput: String) -> WordSuggestion {
+           let wordSuggestionStruct = WordSuggestion()
+           wordSuggestionStruct.arrWordSuggestion = ["correct", "word", "suggestion"]
+           wordSuggestionStruct.autocorrect = true
 
-        return wordSuggestionStruct
-    }
-    
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String, source: predictionSource, pressedCharacter: String) -> [String] {
-        return  []
-    }
-    
+           return wordSuggestionStruct
+       }
+       
+       func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String, source: predictionSource, pressedCharacter:String, isTextBeforeInput: Bool, textBeforeInput: String) -> [String] {
+           return  ["prediction", "is", "here"]
+       }
     
    
    
@@ -186,6 +185,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
             txtInput1.backgroundColor = UIColor.red
             txtInput1.textFont =  UIFont(name: "Helvetica", size: 20)!
             txtInput1.textColor = UIColor.black
+            txtInput1.isPasswordProtacted = true
             txtInput1.textDelegate = self
             
             

@@ -412,7 +412,6 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK17TextInputDelegate_")
 @class UIColor;
 @class UIFont;
 @class UIButton;
-@class UILabel;
 @class NSMutableString;
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK13TextInputView")
@@ -421,7 +420,6 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK13TextInputView")
 @property (nonatomic, strong) UIFont * _Null_unspecified textFont;
 @property (nonatomic, strong) UIButton * _Nullable blinkButton;
 @property (nonatomic) BOOL isPasswordProtacted;
-@property (nonatomic, readonly, strong) UILabel * _Nonnull textLabel;
 @property (nonatomic, weak) id <TextInputDelegate> _Nullable textDelegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -450,16 +448,22 @@ enum predictionSource : NSInteger;
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK22WordSuggestionDelegate_")
 @protocol WordSuggestionDelegate
-- (WordSuggestion * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard nextWordsfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord pressedCharacter:(NSString * _Nonnull)pressedCharacter SWIFT_WARN_UNUSED_RESULT;
+- (WordSuggestion * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard nextWordsfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord pressedCharacter:(NSString * _Nonnull)pressedCharacter isTextBeforeInput:(BOOL)isTextBeforeInput textBeforeInput:(NSString * _Nonnull)textBeforeInput SWIFT_WARN_UNUSED_RESULT;
 - (void)bobbleKeyboardWithTypedWord:(NSString * _Nonnull)typedWord ChoosedWord:(NSString * _Nonnull)ChoosedWord source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
 - (void)bobbleKeyboardWithPrevWord:(NSString * _Nonnull)prevWord autoCorrectedWord:(NSString * _Nonnull)autoCorrectedWord isAutoCorrectWordAccepted:(BOOL)isAutoCorrectWordAccepted source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
-- (NSArray<NSString *> * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard wordPridictionfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord source:(enum predictionSource)source pressedCharacter:(NSString * _Nonnull)pressedCharacter SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<NSString *> * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard wordPridictionfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord source:(enum predictionSource)source pressedCharacter:(NSString * _Nonnull)pressedCharacter isTextBeforeInput:(BOOL)isTextBeforeInput textBeforeInput:(NSString * _Nonnull)textBeforeInput SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, predictionSource, closed) {
   predictionSourceBackspace = 0,
   predictionSourceSpace = 1,
-  predictionSourceSuggestionPressed = 2,
+  predictionSourceDot = 2,
+  predictionSourceComma = 3,
+  predictionSourceSemicolon = 4,
+  predictionSourceSlash = 5,
+  predictionSourceQuestionMark = 6,
+  predictionSourceExclamationMark = 7,
+  predictionSourceSuggestionPressed = 8,
 };
 
 
