@@ -265,7 +265,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
     }
     
     @objc func showButtonClicked() {
-        setKeyboardType(keyboardMode: 0)
+        setKeyboardType(keyboardMode: 10)
         showKeyboardView()
     }
     
