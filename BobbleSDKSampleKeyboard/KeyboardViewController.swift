@@ -157,7 +157,7 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
     }
 
     func keyboardTopBarDidTapTouchButton(_ topBar: KeyboardTopbar) {
-            //touchIdClicked()
+           // touchIdClicked()
             
             let InputViewBy = InputViewByNib.loadView(fromNib: "InputViewByNib", withType: InputViewByNib.self)
             InputViewBy.frame = CGRect(x: 0, y:0, width: self.view.bounds.width, height:200)
@@ -170,7 +170,8 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
             txtInput.textFont =  UIFont(name: "Helvetica", size: 20)!
             txtInput.textColor = UIColor.black
             txtInput.textDelegate = self
-            
+            txtInput.isPasswordProtacted = false
+            txtInput.setMultiLine(set: false)
             InputViewBy.btnDelete.addTarget(self, action: #selector(KeyboardViewController.deleteAllChar), for: .touchUpInside)
             
     //        let button = UIButton(frame: CGRect(x: InputViewBy.btnDelete.o, y: 10, width: 60, height: 60))
@@ -178,15 +179,28 @@ extension KeyboardViewController: KeyboardTopbarDelegate {
     //               button.addTarget(self, action: #selector(KeyboardViewController.deleteAllChar), for: .touchUpInside)
     //               customView.addSubview(button)
             
-            let txtInput1:TextInputView = TextInputView(frame: CGRect(x: 0, y: 0, width: InputViewBy.viewForText1.frame.size.width
+            let txtInput1:TextInputView = TextInputView(frame: CGRect(x: 67, y: 77, width: InputViewBy.viewForText1.frame.size.width
                 , height: InputViewBy.viewForText1.frame.size.height))
-            InputViewBy.viewForText1.addSubview(txtInput1)
-            txtInput1.setPlaceHolder(str: " set place holder 1", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
+            
+            let language:String = UserDefaults.standard.value(forKey: "Language") as! String
+            
+            if language == "ar"
+            {
+                 txtInput1.setPlaceHolder(str: " تعيين عنصر نائب", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
+            }
+            else
+            {
+                 txtInput1.setPlaceHolder(str: " set place holder", placeholderColor: UIColor.lightGray, placeHolderFont: UIFont(name:"Helvetica" , size: 15)!)
+            }
+           
             txtInput1.backgroundColor = UIColor.red
             txtInput1.textFont =  UIFont(name: "Helvetica", size: 20)!
             txtInput1.textColor = UIColor.black
-            txtInput1.isPasswordProtacted = true
+    //        txtInput1.isMultiline = true
+            txtInput1.setMultiLine(set: true)
             txtInput1.textDelegate = self
+            InputViewBy.addSubview(txtInput1)
+            
             
             
             

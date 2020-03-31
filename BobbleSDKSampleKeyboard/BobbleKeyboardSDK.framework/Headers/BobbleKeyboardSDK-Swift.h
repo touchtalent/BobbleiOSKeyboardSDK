@@ -423,6 +423,8 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK13TextInputView")
 @property (nonatomic, weak) id <TextInputDelegate> _Nullable textDelegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (void)setMultiLineWithSet:(BOOL)set;
 - (void)setPlaceHolderWithStr:(NSMutableString * _Nonnull)str placeholderColor:(UIColor * _Nonnull)placeholderColor placeHolderFont:(UIFont * _Nonnull)placeHolderFont;
 @property (nonatomic, readonly) BOOL hasText;
 - (void)insertText:(NSString * _Nonnull)text;
