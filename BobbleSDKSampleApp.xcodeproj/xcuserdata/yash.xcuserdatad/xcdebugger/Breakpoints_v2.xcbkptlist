@@ -79,9 +79,25 @@
             filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "bobbleKeyboard(_:nextWordsfor:previousWord:pressedCharacter:isTextBeforeInput:textBeforeInput:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "bobbleKeyboard(_:nextWordsfor:previousWord:pressedCharacter:isTextBeforeInput:textBeforeInput:touchPoint:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C910452D-3F2A-4177-8E60-63BC9CC17637"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BobbleSDKSampleKeyboard/KeyboardViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "bobbleKeyboard(_:keyCharArray:keyFrameArray:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
