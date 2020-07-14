@@ -456,7 +456,7 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK22WordSuggestionDelegate_")
 - (void)bobbleKeyboardWithTypedWord:(NSString * _Nonnull)typedWord ChoosedWord:(NSString * _Nonnull)ChoosedWord source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
 - (void)bobbleKeyboardWithPrevWord:(NSString * _Nonnull)prevWord autoCorrectedWord:(NSString * _Nonnull)autoCorrectedWord isAutoCorrectWordAccepted:(BOOL)isAutoCorrectWordAccepted source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
 - (NSArray<NSString *> * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard wordPridictionfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord source:(enum predictionSource)source pressedCharacter:(NSString * _Nonnull)pressedCharacter isTextBeforeInput:(BOOL)isTextBeforeInput textBeforeInput:(NSString * _Nonnull)textBeforeInput SWIFT_WARN_UNUSED_RESULT;
-- (void)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard keyCharArray:(NSArray<NSString *> * _Nonnull)keyCharArray keyFrameArray:(NSArray<NSValue *> * _Nonnull)keyFrameArray;
+- (void)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard keyCharArray:(NSArray<NSString *> * _Nonnull)keyCharArray keyFrameArray:(NSArray<NSValue *> * _Nonnull)keyFrameArray keyboardWidth:(double)keyboardWidth keyboardheight:(double)keyboardheight;
 @end
 
 typedef SWIFT_ENUM(NSInteger, predictionSource, closed) {
@@ -939,7 +939,7 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK22WordSuggestionDelegate_")
 - (void)bobbleKeyboardWithTypedWord:(NSString * _Nonnull)typedWord ChoosedWord:(NSString * _Nonnull)ChoosedWord source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
 - (void)bobbleKeyboardWithPrevWord:(NSString * _Nonnull)prevWord autoCorrectedWord:(NSString * _Nonnull)autoCorrectedWord isAutoCorrectWordAccepted:(BOOL)isAutoCorrectWordAccepted source:(enum Source)source wordsArray:(NSArray<NSString *> * _Nonnull)wordsArray;
 - (NSArray<NSString *> * _Nonnull)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard wordPridictionfor:(NSString * _Nonnull)word previousWord:(NSString * _Nonnull)previousWord source:(enum predictionSource)source pressedCharacter:(NSString * _Nonnull)pressedCharacter isTextBeforeInput:(BOOL)isTextBeforeInput textBeforeInput:(NSString * _Nonnull)textBeforeInput SWIFT_WARN_UNUSED_RESULT;
-- (void)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard keyCharArray:(NSArray<NSString *> * _Nonnull)keyCharArray keyFrameArray:(NSArray<NSValue *> * _Nonnull)keyFrameArray;
+- (void)bobbleKeyboard:(BLKeyboardViewController * _Nonnull)bobbleKeyboard keyCharArray:(NSArray<NSString *> * _Nonnull)keyCharArray keyFrameArray:(NSArray<NSValue *> * _Nonnull)keyFrameArray keyboardWidth:(double)keyboardWidth keyboardheight:(double)keyboardheight;
 @end
 
 typedef SWIFT_ENUM(NSInteger, predictionSource, closed) {

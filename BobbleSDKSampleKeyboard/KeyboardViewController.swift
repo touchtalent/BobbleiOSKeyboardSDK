@@ -17,9 +17,8 @@ import LocalAuthentication
 
 
 class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate , WordSuggestionDelegate{
-   
-   
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, keyCharArray: [String], keyFrameArray: [CGRect]) {
+    
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, keyCharArray: [String], keyFrameArray: [CGRect], keyboardWidth: Double, keyboardheight: Double) {
         print("char arr \(keyCharArray)")
         print("char frame arr \(keyFrameArray)")
     }
