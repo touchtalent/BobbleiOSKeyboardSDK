@@ -22,6 +22,9 @@
 		488C575C21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */; };
 		488C575D21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */; };
 		488C575E21802C3400C1A3E4 /* KeyboardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C575921802C1A00C1A3E4 /* KeyboardOverlay.swift */; };
+		607ABDA124BD84B60057C234 /* BobbleKeyboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60AEB6AF24BD767100C2EAB0 /* BobbleKeyboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60AEB6B124BD767100C2EAB0 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AEB6AF24BD767100C2EAB0 /* BobbleKeyboardSDK.framework */; };
+		60AEB6B224BD789C00C2EAB0 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AEB6AF24BD767100C2EAB0 /* BobbleKeyboardSDK.framework */; };
 		D3045F7721B7CF04001C978F /* SystemApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7221B7CF04001C978F /* SystemApplicationManager.swift */; };
 		D3045F7821B7CF04001C978F /* SystemApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7421B7CF04001C978F /* SystemApplication.swift */; };
 		D3045F8421B904EC001C978F /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7A21B904EC001C978F /* QRCodeReader.swift */; };
@@ -37,10 +40,7 @@
 		D30C737A2385666100C62E20 /* InputViewByNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30C73792385666100C62E20 /* InputViewByNib.xib */; };
 		D30CC311225C7158005D5A40 /* horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D30CC310225C7157005D5A40 /* horse.jpg */; };
 		D30CC312225C7158005D5A40 /* horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D30CC310225C7157005D5A40 /* horse.jpg */; };
-		D311F14C2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; };
-		D311F14D2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; };
 		D311F1522175BA03007AE593 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */; };
-		D311F1542175BAA2007AE593 /* BobbleKeyboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D325C6DA21E5DD3600F6DB46 /* InputViewByNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */; };
 		D325C6DC21E5F1B700F6DB46 /* InputViewByNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */; };
 		D356188021BF977A0008F8BD /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D356187F21BF977A0008F8BD /* QRCodeScannerViewController.swift */; };
@@ -72,7 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D311F1542175BAA2007AE593 /* BobbleKeyboardSDK.framework in Embed Frameworks */,
+				607ABDA124BD84B60057C234 /* BobbleKeyboardSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +100,7 @@
 		482C0A84217F1D9E002D740F /* ZomatoHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomatoHomeView.swift; sourceTree = "<group>"; };
 		488C575921802C1A00C1A3E4 /* KeyboardOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardOverlay.swift; sourceTree = "<group>"; };
 		488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardOverlay.xib; sourceTree = "<group>"; };
+		60AEB6AF24BD767100C2EAB0 /* BobbleKeyboardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BobbleKeyboardSDK.framework; sourceTree = "<group>"; };
 		D3045F6E21B7CEC5001C978F /* BobbleSDKSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BobbleSDKSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		D3045F7021B7CF04001C978F /* UIImage-ApplicationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-ApplicationIcons.h"; sourceTree = "<group>"; };
 		D3045F7121B7CF04001C978F /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
@@ -120,7 +121,6 @@
 		D3045F8321B904EC001C978F /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
 		D30C73792385666100C62E20 /* InputViewByNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewByNib.xib; sourceTree = "<group>"; };
 		D30CC310225C7157005D5A40 /* horse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horse.jpg; sourceTree = "<group>"; };
-		D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BobbleKeyboardSDK.framework; sourceTree = "<group>"; };
 		D325C6D921E5DD3600F6DB46 /* InputViewByNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewByNib.swift; sourceTree = "<group>"; };
 		D356187F21BF977A0008F8BD /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
 		D356188121BFB7740008F8BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D311F14C2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */,
+				60AEB6B224BD789C00C2EAB0 /* BobbleKeyboardSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +152,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AEB6B124BD767100C2EAB0 /* BobbleKeyboardSDK.framework in Frameworks */,
 				D356188A21C11BBA0008F8BD /* LocalAuthentication.framework in Frameworks */,
-				D311F14D2175AF5E007AE593 /* BobbleKeyboardSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,11 +291,11 @@
 				482C0A7D217F1A0E002D740F /* Zomato */,
 				482C0A77217E4506002D740F /* Classes */,
 				482C0A72217E1043002D740F /* Topbar */,
-				D311F14B2175AF5E007AE593 /* BobbleKeyboardSDK.framework */,
 				D3DF7E48206E6478000F43D2 /* KeyboardViewController.swift */,
 				D3DF7E49206E6478000F43D2 /* Info.plist */,
 				482C0A6C217E0EEE002D740F /* BackupViewController.swift */,
 				482C0A75217E3915002D740F /* Media.xcassets */,
+				60AEB6AF24BD767100C2EAB0 /* BobbleKeyboardSDK.framework */,
 			);
 			path = BobbleSDKSampleKeyboard;
 			sourceTree = "<group>";
@@ -609,7 +609,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = J7DYRJ66PN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -635,7 +635,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = J7DYRJ66PN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -658,7 +658,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = J7DYRJ66PN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -682,7 +682,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = J7DYRJ66PN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
