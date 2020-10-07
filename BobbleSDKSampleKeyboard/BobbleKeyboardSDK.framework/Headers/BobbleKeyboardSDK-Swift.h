@@ -363,6 +363,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 - (NSArray<NSString *> * _Nonnull)getAllFontName SWIFT_WARN_UNUSED_RESULT;
 - (void)sendTextToConnectedInputWithText:(NSString * _Nonnull)text;
 - (void)hideKeyboardView;
+- (NSString * _Nonnull)getTextFromInputTextfield SWIFT_WARN_UNUSED_RESULT;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -409,6 +410,8 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK17TextInputDelegate_")
 - (void)textViewShouldBeginEditingWithTextView:(TextInputView * _Nonnull)textView;
 - (void)textViewDidEndEditingWithTextView:(TextInputView * _Nonnull)textView;
 - (void)textViewShouldReturnWithTextView:(TextInputView * _Nonnull)textView;
+- (void)copyfromtextViewWithCopiedText:(NSString * _Nonnull)copiedText;
+- (void)pasteIntextViewWithPasteText:(NSString * _Nonnull)pasteText;
 @end
 
 @class UIColor;
@@ -846,6 +849,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 - (NSArray<NSString *> * _Nonnull)getAllFontName SWIFT_WARN_UNUSED_RESULT;
 - (void)sendTextToConnectedInputWithText:(NSString * _Nonnull)text;
 - (void)hideKeyboardView;
+- (NSString * _Nonnull)getTextFromInputTextfield SWIFT_WARN_UNUSED_RESULT;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -892,6 +896,8 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK17TextInputDelegate_")
 - (void)textViewShouldBeginEditingWithTextView:(TextInputView * _Nonnull)textView;
 - (void)textViewDidEndEditingWithTextView:(TextInputView * _Nonnull)textView;
 - (void)textViewShouldReturnWithTextView:(TextInputView * _Nonnull)textView;
+- (void)copyfromtextViewWithCopiedText:(NSString * _Nonnull)copiedText;
+- (void)pasteIntextViewWithPasteText:(NSString * _Nonnull)pasteText;
 @end
 
 @class UIColor;
