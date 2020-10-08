@@ -628,3 +628,28 @@ class SampleKeyboardViewController: BobbleKeyboardViewController {
     }
  }
  ```
+  
+ #### 20. Get Keys frame and Keys chracters
+ 
+This API gives you key frames and all keyboard charcters. Set WordSuggestionDelegate in viewwillapper.
+ 
+**Example :**
+  
+```swift
+
+import UIKit
+import BobbleKeyboardSDK
+
+class SampleKeyboardViewController: BobbleKeyboardViewController {
+ 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setWordSuggestionDelegate(delegate: self)
+    }
+ func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, keyCharArray: [String], keyFrameArray: [CGRect], keyboardWidth:CGFloat, keyboardheight:CGFloat ) {
+           print("char arr \(keyCharArray)")
+           print("char arr \(keyFrameArray)")
+       }
+    
+ }
+ ```
