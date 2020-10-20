@@ -212,6 +212,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
 @interface KeyboardViewController : UIInputViewController <NSXMLParserDelegate>
+@property (nonatomic) BOOL isCustomInputViewEnable;
 @property (nonatomic) CGRect viewOverSuggestionBarframe;
 @property (nonatomic) CGRect topbarframe;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -259,10 +260,10 @@ typedef SWIFT_ENUM(NSInteger, BobbleIMESettings, closed) {
 };
 
 @class UIView;
-@class TextInputView;
 @protocol BobbleWordCommitDelegate;
 @protocol touchIdDelegate;
 @protocol WordSuggestionDelegate;
+@protocol CustomInputViewDelegate;
 @class KeyboardThemeModel;
 
 /// Custom keyboard view controller
@@ -291,7 +292,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 /// <code>textView</code> should not be nil.
 /// \param textView The view that needs to be shown.
 ///
-- (void)setInputTargetWithTextView:(TextInputView * _Nonnull)textView keyboardMode:(NSInteger)keyboardMode;
+- (void)showInputViewWithKeyboardMode:(NSInteger)keyboardMode;
 - (void)setKeyboardTypeWithKeyboardMode:(NSInteger)keyboardMode;
 /// The custom class that extends BobbleKeyboardViewController can call restoreInputTarget() API to restore input transaction back to host app. If a custom view was visible previously and also keyboard input view was visible, then only custom view is shown and keyboard input view is closed. After this API is called, any input interaction will be performed on the host app until and unless user does not manually focuses to a text field inside custom view
 - (void)restoreInputTarget;
@@ -341,6 +342,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 - (void)TouchIdDelegateWithDelegate:(id <touchIdDelegate> _Nonnull)delegate;
 - (void)setThresholdValueForAutoCorrectionWithValue:(double)value;
 - (void)setWordSuggestionDelegateWithDelegate:(id <WordSuggestionDelegate> _Nonnull)delegate;
+- (void)setCustomInputViewDelegateWithDelegate:(id <CustomInputViewDelegate> _Nonnull)delegate;
 /// The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard theme
 /// for Custom theme
 /// parameters in KeyboardThemeModel -
@@ -377,12 +379,21 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK24BobbleWordCommitDelegate_")
 @end
 
 
+SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK23CustomInputViewDelegate_")
+@protocol CustomInputViewDelegate
+- (void)keyDidPressedWithText:(NSString * _Nonnull)text;
+- (void)backSpaceDidPressed;
+- (void)updateCustomInputViewText;
+@end
+
+
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK15CustomTextField")
 @interface CustomTextField : UITextField
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TextInputView;
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK35KeyboardReturnButtonClickedDelegate_")
 @protocol KeyboardReturnButtonClickedDelegate
@@ -701,6 +712,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK22KeyboardViewController")
 @interface KeyboardViewController : UIInputViewController <NSXMLParserDelegate>
+@property (nonatomic) BOOL isCustomInputViewEnable;
 @property (nonatomic) CGRect viewOverSuggestionBarframe;
 @property (nonatomic) CGRect topbarframe;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -748,10 +760,10 @@ typedef SWIFT_ENUM(NSInteger, BobbleIMESettings, closed) {
 };
 
 @class UIView;
-@class TextInputView;
 @protocol BobbleWordCommitDelegate;
 @protocol touchIdDelegate;
 @protocol WordSuggestionDelegate;
+@protocol CustomInputViewDelegate;
 @class KeyboardThemeModel;
 
 /// Custom keyboard view controller
@@ -780,7 +792,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 /// <code>textView</code> should not be nil.
 /// \param textView The view that needs to be shown.
 ///
-- (void)setInputTargetWithTextView:(TextInputView * _Nonnull)textView keyboardMode:(NSInteger)keyboardMode;
+- (void)showInputViewWithKeyboardMode:(NSInteger)keyboardMode;
 - (void)setKeyboardTypeWithKeyboardMode:(NSInteger)keyboardMode;
 /// The custom class that extends BobbleKeyboardViewController can call restoreInputTarget() API to restore input transaction back to host app. If a custom view was visible previously and also keyboard input view was visible, then only custom view is shown and keyboard input view is closed. After this API is called, any input interaction will be performed on the host app until and unless user does not manually focuses to a text field inside custom view
 - (void)restoreInputTarget;
@@ -830,6 +842,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 - (void)TouchIdDelegateWithDelegate:(id <touchIdDelegate> _Nonnull)delegate;
 - (void)setThresholdValueForAutoCorrectionWithValue:(double)value;
 - (void)setWordSuggestionDelegateWithDelegate:(id <WordSuggestionDelegate> _Nonnull)delegate;
+- (void)setCustomInputViewDelegateWithDelegate:(id <CustomInputViewDelegate> _Nonnull)delegate;
 /// The custom class that extends BobbleKeyboardViewController can call loadTheme() to customize the keyboard theme
 /// for Custom theme
 /// parameters in KeyboardThemeModel -
@@ -866,12 +879,21 @@ SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK24BobbleWordCommitDelegate_")
 @end
 
 
+SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK23CustomInputViewDelegate_")
+@protocol CustomInputViewDelegate
+- (void)keyDidPressedWithText:(NSString * _Nonnull)text;
+- (void)backSpaceDidPressed;
+- (void)updateCustomInputViewText;
+@end
+
+
 SWIFT_CLASS("_TtC17BobbleKeyboardSDK15CustomTextField")
 @interface CustomTextField : UITextField
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TextInputView;
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK35KeyboardReturnButtonClickedDelegate_")
 @protocol KeyboardReturnButtonClickedDelegate
