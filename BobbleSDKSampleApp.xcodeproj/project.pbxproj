@@ -22,9 +22,9 @@
 		488C575C21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */; };
 		488C575D21802C3000C1A3E4 /* KeyboardOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */; };
 		488C575E21802C3400C1A3E4 /* KeyboardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C575921802C1A00C1A3E4 /* KeyboardOverlay.swift */; };
-		600561E8253EB50B006C8068 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600561E6253EB50B006C8068 /* BobbleKeyboardSDK.framework */; };
-		600561E9253EB532006C8068 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600561E6253EB50B006C8068 /* BobbleKeyboardSDK.framework */; };
-		600561EA253EB532006C8068 /* BobbleKeyboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 600561E6253EB50B006C8068 /* BobbleKeyboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		60ABEFCD25405FF10089C7E0 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ABEFCB25405FF10089C7E0 /* BobbleKeyboardSDK.framework */; };
+		60ABEFCE25405FF70089C7E0 /* BobbleKeyboardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60ABEFCB25405FF10089C7E0 /* BobbleKeyboardSDK.framework */; };
+		60ABEFCF25405FF70089C7E0 /* BobbleKeyboardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 60ABEFCB25405FF10089C7E0 /* BobbleKeyboardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3045F7721B7CF04001C978F /* SystemApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7221B7CF04001C978F /* SystemApplicationManager.swift */; };
 		D3045F7821B7CF04001C978F /* SystemApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7421B7CF04001C978F /* SystemApplication.swift */; };
 		D3045F8421B904EC001C978F /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3045F7A21B904EC001C978F /* QRCodeReader.swift */; };
@@ -72,7 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				600561EA253EB532006C8068 /* BobbleKeyboardSDK.framework in Embed Frameworks */,
+				60ABEFCF25405FF70089C7E0 /* BobbleKeyboardSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +100,7 @@
 		482C0A84217F1D9E002D740F /* ZomatoHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomatoHomeView.swift; sourceTree = "<group>"; };
 		488C575921802C1A00C1A3E4 /* KeyboardOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardOverlay.swift; sourceTree = "<group>"; };
 		488C575B21802C3000C1A3E4 /* KeyboardOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardOverlay.xib; sourceTree = "<group>"; };
-		600561E6253EB50B006C8068 /* BobbleKeyboardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BobbleKeyboardSDK.framework; sourceTree = "<group>"; };
+		60ABEFCB25405FF10089C7E0 /* BobbleKeyboardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BobbleKeyboardSDK.framework; sourceTree = "<group>"; };
 		D3045F6E21B7CEC5001C978F /* BobbleSDKSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BobbleSDKSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		D3045F7021B7CF04001C978F /* UIImage-ApplicationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-ApplicationIcons.h"; sourceTree = "<group>"; };
 		D3045F7121B7CF04001C978F /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600561E9253EB532006C8068 /* BobbleKeyboardSDK.framework in Frameworks */,
+				60ABEFCE25405FF70089C7E0 /* BobbleKeyboardSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600561E8253EB50B006C8068 /* BobbleKeyboardSDK.framework in Frameworks */,
+				60ABEFCD25405FF10089C7E0 /* BobbleKeyboardSDK.framework in Frameworks */,
 				D356188A21C11BBA0008F8BD /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +295,7 @@
 				D3DF7E49206E6478000F43D2 /* Info.plist */,
 				482C0A6C217E0EEE002D740F /* BackupViewController.swift */,
 				482C0A75217E3915002D740F /* Media.xcassets */,
-				600561E6253EB50B006C8068 /* BobbleKeyboardSDK.framework */,
+				60ABEFCB25405FF10089C7E0 /* BobbleKeyboardSDK.framework */,
 			);
 			path = BobbleSDKSampleKeyboard;
 			sourceTree = "<group>";
@@ -618,7 +618,7 @@
 				INFOPLIST_FILE = BobbleSDKSampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 21.0;
+				MARKETING_VERSION = 22.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -644,7 +644,7 @@
 				INFOPLIST_FILE = BobbleSDKSampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 21.0;
+				MARKETING_VERSION = 22.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -669,7 +669,7 @@
 				INFOPLIST_FILE = BobbleSDKSampleKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 21.0;
+				MARKETING_VERSION = 22.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp.BobbleSDKSampleKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -692,7 +692,7 @@
 				INFOPLIST_FILE = BobbleSDKSampleKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 21.0;
+				MARKETING_VERSION = 22.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.touchtalent.Bobble.BobbleSDKSampleApp.BobbleSDKSampleKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
