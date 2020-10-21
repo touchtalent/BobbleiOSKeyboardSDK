@@ -19,7 +19,7 @@ import LocalAuthentication
 class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate , WordSuggestionDelegate, CustomInputViewDelegate{
     
     func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String, pressedCharacter: String, isTextBeforeInput: Bool, textBeforeInput: String, touchPoint: CGPoint, completionHandler: (WordSuggestion) -> Void) {
-        
+        //method: completion handler in keypress
     }
     
     //showInputView(keyboardMode:0) for keyboardopen
