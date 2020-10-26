@@ -260,6 +260,7 @@ typedef SWIFT_ENUM(NSInteger, BobbleIMESettings, closed) {
 };
 
 @class UIView;
+@class TextInputView;
 @protocol BobbleWordCommitDelegate;
 @protocol touchIdDelegate;
 @protocol WordSuggestionDelegate;
@@ -292,7 +293,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 /// <code>textView</code> should not be nil.
 /// \param textView The view that needs to be shown.
 ///
-- (void)showInputViewWithKeyboardMode:(NSInteger)keyboardMode;
+- (void)setInputTargetWithTextView:(TextInputView * _Nullable)textView keyboardMode:(NSInteger)keyboardMode isSdkInputView:(BOOL)isSdkInputView;
 - (void)setKeyboardTypeWithKeyboardMode:(NSInteger)keyboardMode;
 /// The custom class that extends BobbleKeyboardViewController can call restoreInputTarget() API to restore input transaction back to host app. If a custom view was visible previously and also keyboard input view was visible, then only custom view is shown and keyboard input view is closed. After this API is called, any input interaction will be performed on the host app until and unless user does not manually focuses to a text field inside custom view
 - (void)restoreInputTarget;
@@ -393,7 +394,6 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK15CustomTextField")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class TextInputView;
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK35KeyboardReturnButtonClickedDelegate_")
 @protocol KeyboardReturnButtonClickedDelegate
@@ -760,6 +760,7 @@ typedef SWIFT_ENUM(NSInteger, BobbleIMESettings, closed) {
 };
 
 @class UIView;
+@class TextInputView;
 @protocol BobbleWordCommitDelegate;
 @protocol touchIdDelegate;
 @protocol WordSuggestionDelegate;
@@ -792,7 +793,7 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK28BobbleKeyboardViewController")
 /// <code>textView</code> should not be nil.
 /// \param textView The view that needs to be shown.
 ///
-- (void)showInputViewWithKeyboardMode:(NSInteger)keyboardMode;
+- (void)setInputTargetWithTextView:(TextInputView * _Nullable)textView keyboardMode:(NSInteger)keyboardMode isSdkInputView:(BOOL)isSdkInputView;
 - (void)setKeyboardTypeWithKeyboardMode:(NSInteger)keyboardMode;
 /// The custom class that extends BobbleKeyboardViewController can call restoreInputTarget() API to restore input transaction back to host app. If a custom view was visible previously and also keyboard input view was visible, then only custom view is shown and keyboard input view is closed. After this API is called, any input interaction will be performed on the host app until and unless user does not manually focuses to a text field inside custom view
 - (void)restoreInputTarget;
@@ -893,7 +894,6 @@ SWIFT_CLASS("_TtC17BobbleKeyboardSDK15CustomTextField")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class TextInputView;
 
 SWIFT_PROTOCOL("_TtP17BobbleKeyboardSDK35KeyboardReturnButtonClickedDelegate_")
 @protocol KeyboardReturnButtonClickedDelegate

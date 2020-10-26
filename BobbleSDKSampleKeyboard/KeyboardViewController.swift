@@ -18,12 +18,7 @@ import LocalAuthentication
 
 class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDelegate,touchIdDelegate , UITextFieldDelegate,TextInputDelegate , WordSuggestionDelegate, CustomInputViewDelegate{
     
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String, pressedCharacter: String, isTextBeforeInput: Bool, textBeforeInput: String, touchPoint: CGPoint, completionHandler: (WordSuggestion) -> Void) {
-        //method: completion handler in keypress
-    }
-    
-    //showInputView(keyboardMode:0) for keyboardopen
-    //set delegate setCustomInputViewDelegate(delegate: self)
+
     
     func keyDidPressed(text: String) {
         
@@ -38,15 +33,7 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
         //please update customInputViewText every time
         self.updateCustomInputViewText()
     }
-    
-    func returnDidPressed() {
-        
-    }
-    
-    func spaceBarDidPressed() {
-        
-    }
-    
+
     func updateCustomInputViewText()
     {
         customInputViewText = ""//update text after every change
@@ -82,12 +69,13 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
         print("prevWord = \(prevWord) and autoCorrectedWord = \(autoCorrectedWord) and isAutoCorrectWordAccepted = \(isAutoCorrectWordAccepted) and source = \(source) and wordsArray = \(wordsArray)")
     }
     
-    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String, pressedCharacter: String, isTextBeforeInput: Bool, textBeforeInput: String, touchPoint:CGPoint) -> WordSuggestion {
+    func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, nextWordsfor word: String, previousWord: String, pressedCharacter: String, isTextBeforeInput: Bool, textBeforeInput: String, touchPoint:CGPoint, completionHandler:(WordSuggestion) -> Void)  {
         let wordSuggestionStruct = WordSuggestion()
-        wordSuggestionStruct.arrWordSuggestion = []
+        wordSuggestionStruct.arrWordSuggestion = ["raqm","rawm","ramd","rfam","ragm"]
         wordSuggestionStruct.autocorrect = true
 
-        return wordSuggestionStruct
+        completionHandler(wordSuggestionStruct)
+        //return wordSuggestionStruct
     }
     
     func bobbleKeyboard(_ bobbleKeyboard: BLKeyboardViewController, wordPridictionfor word: String, previousWord: String, source: predictionSource, pressedCharacter:String, isTextBeforeInput: Bool, textBeforeInput: String) -> [String] {
@@ -123,8 +111,8 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
             currentInputTextView?.hideBlinkView()
         }
         currentInputTextView = textView
-        //setInputTarget(textView: textView, keyboardMode:0)
-        showInputView(keyboardMode:0)
+        setInputTarget(textView: textView, keyboardMode:0, isSdkInputView:true)
+       // showInputView(keyboardMode:0)
         print(textView)
     }
     
@@ -176,6 +164,7 @@ class KeyboardViewController: BobbleKeyboardViewController, BobbleWordCommitDele
         super.viewWillAppear(animated)
         setBobbleWordCommitDelegate(delegate: self)
         setCustomInputViewDelegate(delegate: self)
+       
         TouchIdDelegate(delegate: self)
         setThresholdValueForAutoCorrection(value: 0.15)
         setWordSuggestionDelegate(delegate: self)
@@ -451,4 +440,3 @@ extension KeyboardViewController: UITableViewDelegate, UITableViewDataSource {
         print("")
     }
 }
-
